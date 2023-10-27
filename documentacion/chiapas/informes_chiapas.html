@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="text/css" href="../../descarga/img_des/Imagen-icono_programa.ico">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../../assets/styles/estilo_act.css">
+    <link rel="stylesheet" href="../../assets/styles/collapsible.css">
+    
+    <title>actas</title>    
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <img src="../../descarga/img_des/Encabezado.png" alt="Encabezado" class="img-encabezado">
+            <hr class="linea__navbar-gris">
+            <hr class="linea__navbar-verde">
+            <hr class="linea__navbar-azul">
+            <hr class="linea__navbar-amarrillo">
+            <img src="../../descarga/img_des/LOGO-SNIEG-ENCABEZADO.png" alt="Logo SNIEG" class="logo__navbar--SNIEG">
+            <!--img src="./México-Actas y Minutas_files/logo-EDOMEX.png" alt="Logo EDOMEX" class="logo__navbar--EDOMEX"-->
+            <img src="../../descarga/img_des/logo-inegi.png" alt="Logo INEGI" class="logo__navbar--INEGI">
+        </div>
+    </header>
+
+    <a class="boton_regreso" href="../../chiapas.html" aria-hidden="true">
+        <div class="icono">
+            <span class="icon-undo2 svg"></span>
+        </div>
+        <span class="texto">Regresar</span>
+    </a>
+
+    <a href="../../descarga.html#" class="tooltips" aria-hidden="true">
+        <span class="icon-info icon-info-respo">
+            <span class="caja__info"><b>Actas del CEIEG:</b><br><br> Documentos en los que se establece los principales temas y asuntos expuestos durante las sesiones del CEIEG. De acuerdo con las Reglas para la integración y operación de los Comités Técnicos Especializados (RIOCTE) se deberá sesionar por lo menos dos veces al año. </span>
+        </span>
+    </a> 
+
+    <!-- Menu de contenido -->
+    <div class="menu__archivos" >
+        <h2 class="menu__archivos--titulo">Actas del CEIEG<span class="icon-file-pdf icon__pdf"></span></h2>
+        <ul class="dropdown" id="menu" style="padding: 16px;"> </ul> 
+    </div>
+
+    <!-- PDF visor -->
+    <div class="previsual" aria-hidden="true">
+        <div class="previsual__imagen" id="previsual__imagen" style="display: block;">
+            <img src="../../descarga/img_des/imagen_selecciona.svg" alt="Imagen de bienvenida" class="previsual__imagen--edit">
+        </div>
+        
+        <!-- Archivo por2023 -->
+        <div class="previsual__archivo" id="pdfview" style="display: none;">
+            <object id="tmp" class="previsual__archivo--tamaño" type="application/pdf" data="../../descarga/Actas_des/Chiapas/Actas/07_ACTA_REINSTALACION_CEIEG_2013.pdf"></object>
+        </div>
+    </div>
+
+    <!-- Pie de pagina -->
+    <footer aria-hidden="true">
+        <div class="waves">
+            <div class="waves" id="wave1"></div>
+            <div class="waves" id="wave2"></div>
+            <div class="waves" id="wave3"></div>
+            <div class="waves" id="wave4"></div>
+        </div>
+        
+        <div class="footer_menu--redes">
+            <h2>Redes sociales</h2>
+            <ul class="social__icon">
+                <li><a href="actas_chi.html" class="footer_a"><span class="icon-facebook"></span></a></li>
+                <li><a href="actas_chi.html" class="footer_a"><span class="icon-twitter"></span></a></li>
+                <li><a href="actas_chi.html" class="footer_a"><span class="icon-youtube"></span></a></li>
+                <li><a href="actas_chi.html" class="footer_a"><span class="icon-instagram"></span></a></li>
+            </ul>
+            <img src="../../descarga/img_des/logoinegibco.png" alt="Logo Inegi" class="logo_inegi">
+                <a href="http://www.facebook.com/pages/inegi-informa/180299958681029">Facebook</a>
+                <a href="http://twitter.com/inegi_informa">Twitter</a>
+                <a href="https://www.youtube.com/user/INEGIInforma">Youtube</a>
+                <a href="https://www.instagram.com/inegi_informa/">Instagram</a>
+        
+        </div>
+        <!-- <div class="footer_menu--enlace">
+            <h2>Enlaces</h2>
+            <a href="https://www.inegi.org.mx/">INEGI</a>
+            <a href="https://www.gob.mx/inmujeres/acciones-y-programas/norma-mexicana-nmx-r-025-scfi-2015-en-igualdad-laboral-y-no-discriminacion">Norma Mexicana <br> NMX R 025 SCFI 2015 en <br> Igualdad Laboral y No Discriminación</a>
+            <a href="https://atlasdegenero-semujeres.edomex.gob.mx/">Atlas de Género del Estado de México</a>
+            <a href="/inegi/enlaces.html">Enlaces de interés</a>
+            <a href="http://cuentame.inegi.org.mx/">Cuéntame de México</a>
+        
+        </div> -->
+        <div class="footer_menu--interes">
+            <h2>Sitios de interés</h2>
+            <!-- <ul class="social__icon__interes">
+                <li><a href="" class="footer_a__interes"><span class="icon-sphere"></span></a></li>
+                <li><a href="" class="footer_a__interes"><span class="icon-sphere"></span></a></li>
+                <li><a href="" class="footer_a__interes"><span class="icon-sphere"></span></a></li>
+                <li><a href="" class="footer_a__interes"><span class="icon-sphere"></span></a></li>
+            </ul> -->
+            <a href="https://www.snieg.mx/">SNIEG</a>
+            <a href="https://www.inegi.org.mx/">INEGI</a>
+            <a href="https://edomex.gob.mx/">EDOMEX</a>
+            <a href="https://www.snieg.mx/RNIEG/">RNIEG</a>
+    
+        
+        </div>
+
+        <label class="depa">Coordinación Estatal Chiapas </label>
+        <p class="copy">© Departamento de Comité Estatal</p>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        var previsual = null;
+        var pdfViewer = null; 
+        document.addEventListener("DOMContentLoaded", function() {
+            previsual = document.getElementById('previsual__imagen'); 
+            pdfViewer = document.getElementById("pdfview"); 
+        });
+
+        function showPDF(pdfURL) { 
+            previsual.style.display = 'none';
+            setTimeout(() => {
+                pdfViewer.style.display = 'block';
+                
+            }, 100);
+            document.getElementById('tmp').setAttribute("data", pdfURL);
+        }
+    </script>
+    <script src="../../assets/js/menu.js"></script>
+    <script src="../../assets/js/collapsible.js"></script>
+    <script>
+        var config = [
+            {
+                periodo: "Periodo 2019-2024",
+                anios: [
+                {
+                    anio: "Año 2023",
+                    documentos: [
+                    {
+                        titulo: "1er informe sem 2023",
+                        url: "./pdfs/informes/07_1er_informe_sem_2023.pdf"
+                    }
+                    ]
+                },
+
+                {
+                    anio: "Año 2022",
+                    documentos: [
+                    {
+                        titulo: "1er Informe sem 2022",
+                        url: "./pdfs/informes/07_1er_Informe_sem_2022.pdf",
+                    },
+                    {
+                        titulo: "1er Informe sem 2022 OFICIO DE ENTREGA",
+                        url: "./pdfs/informes/07_1er_Informe_sem_2022_OFICIO_DE_ENTREGA.pdf"
+                    }
+                    ]
+                },
+
+                {
+                    anio: "Año 2021",
+                    documentos: [
+                    {
+                        titulo: "1er INFORME SEMESTRAL 2021 y OFICIO DE ENTREGA",
+                        url: "./pdfs/informes/07_1er_INFORME_SEMESTRAL_2021_y_OFICIO_DE_ENTREGA.pdf",
+                    },
+                    {
+                        titulo: "2do INFORME SEMESTRAL 2021",
+                        url: "./pdfs/informes/07_2do_INFORME_SEMESTRAL_2021.pdf",
+                    },
+                {
+                        titulo: "2do INFORME SEMESTRAL 2021 OFICIO DE ENTREGA",
+                        url: "./pdfs/informes/07_2do_INFORME_SEMESTRAL_2021_OFICIO_DE_ENTREGA.pdf"
+                    }
+                    ]
+                },
+                
+                {
+                    anio: "Año 2020",
+                    documentos: [
+                    {
+                        titulo: "1er INFORME SEMESTRAL 2020",
+                        url: "./pdfs/informes/07_1er_INFORME_SEMESTRAL_2020.pdf",
+                    },
+                    {
+                        titulo: "1er INFORME SEMESTRAL 2020 OFICIO ENTREGA",
+                        url: "./pdfs/informes/07_1er_INFORME_SEMESTRAL_2020_OFICIO_ENTREGA.pdf",
+                    },
+                {
+                        titulo: "2do INFORME SEMESTRAL 2020",
+                        url: "./pdfs/informes/07_2do_INFORME_SEMESTRAL_2020.pdf",
+                    },
+                {
+                        titulo: "2do INFORME SEMESTRAL 2020 OFICIO DE ENTREGA",
+                        url: "./pdfs/informes/07_2do_INFORME_SEMESTRAL_2020_OFICIO_DE_ENTREGA.pdf"
+                    }
+                    ]
+                },
+                
+                {
+                    anio: "Año 2019",
+                    documentos: [
+                    {
+                        titulo: "2do INFORME SEMESTRAL 2019",
+                        url: "./pdfs/informes/07_2do_INFORME_SEMESTRAL_2019.pdf",
+                    },
+                    {
+                        titulo: "2do INFORME SEMESTRAL 2019 OFICIO DE ENTREGA",
+                        url: "./pdfs/informes/07_2do_INFORME_SEMESTRAL_2019_OFICIO_DE_ENTREGA.pdf"
+                    }
+                    ]
+                }
+                ]
+            },
+
+            {
+                periodo: "Periodo 2013-2018",
+                anios: [
+                {
+                    anio: "Año 2018",
+                    documentos: [
+                    {
+                        titulo: "1er Informe sem 2018",
+                        url: "./pdfs/informes/07_1er_Informe_sem_2018.pdf",
+                    },
+                    {
+                        titulo: "1er Informe sem 2018 OFICIO ENTREGA",
+                        url: "./pdfs/informes/07_1er_Informe_sem_2018_OFICIO_ENTREGA.pdf",
+                    },
+                {
+                        titulo: "2do Informe sem 2018",
+                        url: "./pdfs/informes/07_2do_Informe_sem_2018.pdf",
+                    },
+                {
+                        titulo: "2do Informe sem 2018 OFICIO ENTREGA",
+                        url: "./pdfs/informes/07_2do_Informe_sem_2018_OFICIO_ENTREGA.pdf"
+                    }
+                    ]
+                },
+
+                {
+                    anio: "Año 2017",
+                    documentos: [
+                    {
+                        titulo: "1er Informe sem 2017",
+                        url: "./pdfs/informes/07_1er_Informe_sem_2017.pdf",
+                    },
+                    {
+                        titulo: "1er Informe sem 2017 OFICIO ENTREGA",
+                        url: "./pdfs/informes/07_1er_Informe_sem_2017_OFICIO_ENTREGA.pdf",
+                    },
+                {
+                        titulo: "2do Informe sem 2017",
+                        url: "./pdfs/informes/07_2do_Informe_sem_2017.pdf",
+                    },
+                {
+                        titulo: "2do Informe sem 2017 OFICIO ENTREGA",
+                        url: "./pdfs/informes/07_2do_Informe_sem_2017_OFICIO_ENTREGA.pdf"
+                    }
+                    ]
+                },
+
+                {
+                    anio: "Año 2016",
+                    documentos: [
+                    {
+                        titulo: "1er Informe sem 2016",
+                        url: "./pdfs/informes/07_1er_Informe_sem_2016.pdf",
+                    },
+                    {
+                        titulo: "1er Informe sem 2016 OFICIO DE ENTREGA",
+                        url: "./pdfs/informes/07_1er_Informe_sem_2017_OFICIO_ENTREGA.pdf",
+                    },
+                {
+                        titulo: "2do Informe sem 2016",
+                        url: "./pdfs/informes/07_2do_Informe_sem_2016.pdf",
+                    },
+                {
+                        titulo: "2do Informe sem 2016 OFICIO ENTREGA",
+                        url: "./pdfs/informes/07_2do_Informe_sem_2016_OFICIO_ENTREGA.pdf"
+                    }
+                    ]
+                },
+                
+                {
+                    anio: "Año 2015",
+                    documentos: [
+                    {
+                        titulo: "",
+                        url: ""
+                    }
+                    ]
+                },
+                
+                {
+                    anio: "Año 2014",
+                    documentos: [
+                    {
+                        titulo: "",
+                        url: ""
+                    }
+                    ]
+                },
+
+                {
+                    anio: "Año 2013",
+                    documentos: [
+                    {
+                        titulo: "",
+                        url: ""
+                    }
+                    ]
+                }
+                ]  
+            } 
+            ];
+        itemMenu(config);
+    </script>
+</body>
+</html>

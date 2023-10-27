@@ -1,0 +1,51 @@
+# modules
+node_modules
+
+# editor 
+.DS_Store
+
+# local env files
+.env.local
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# eslint
+.eslintcache
+
+# config files
+Taskfile.yml
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.lock
+.scannerwork
+
+# vuetify
+components.d.ts
+
+# tests
+coverage
+/tests/e2e/videos/
+/tests/e2e/screenshots/
+
+# sw
+dev-dist
+
+# build 
+/dist
+
+# svg, delete when no longer needed
+/svg-test
+
