@@ -419,92 +419,52 @@ body{
 }
 
 /* footer */
-
-.footer{
-    background-color: #1d293f;    
+.titulo{
+    color:#653a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    
 }
 
-.footer_title{
-    font-weight: 300;
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
-.footer_title, .footer_newsletter{
-    color: #fff;
-}
-
-.footer_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 60px;
-}
-
-.nav--footer{
-    padding-bottom: 20px;
-    display: grid;
-    gap: 1em;
-    grid-auto-flow: row;
-    height: 100%;
-}
-
-.nav_link--footer{
-    display: flex;
-    margin: 0;
-    margin-right: 20px;
-    flex-wrap: wrap;
-}
-
-.footer_inputs{
-    margin-top: 10px;
-    display: flex;
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
     overflow: hidden;
 }
 
-.footer.footer_input{
-    background-color: #fff;
-    height: 50px;
-    display: block;
-    padding-left: 10px;
-    border-radius: 6px;
-    font-size: 1rem;
-    outline: none;
-    border: none;
-    margin-right: 16px;
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
 }
 
-.footer_submit{
-    margin-left: auto;
-    display: inline-block;
-    height: 50px;
-    padding: 0 20px;
-    background-color: #2091f9;
-    border: none;
-    font-size: 1rem;
-    color: #fff;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.footer_copy{
-    --padding-container: 30px 0;
+.content-foo{
     text-align: center;
-    color: #fff;
 }
 
-.footer_copyrght{
-    font-weight: 300;
+.content-foo h4{
+color: #fff;
+border-bottom: 3px solid #af20d3;
+padding-bottom: 5px;
+margin-bottom: 20px;
 }
 
-.footer_icons{
-    margin-bottom: 10px;
+.content-foo p{
+    color: #ccc;
 }
 
-.footer_img{
-    width: 30px;
+.Titulo-final{
+    text-align: right;
+    font-size: 15px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
 }
+/* End footer */
 
 /* Media queries */
 
@@ -700,4 +660,7 @@ body{
         width: 100%;
         */
     }
+
 }
+
+   
