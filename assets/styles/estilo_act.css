@@ -401,12 +401,14 @@ header{
     cursor: pointer;
 }
 .header--opciones--submenu{
-    margin-top: 11px;
+    margin-top: 1px;
     text-align: center;
 }
 .header--opciones{
-    margin-top: 11px;
+    
+    margin-top: 2px;
     text-align: center;
+    color: rgb(177, 17, 17);
 }
 .contenido__opciones{
     color: black;
