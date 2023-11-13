@@ -13,7 +13,7 @@ body{
     border-bottom: 1px;
     padding: 60px 0;
     width: 90%;
-    max-width: 1000px;
+    max-width: 1150px;
     margin: auto;
     overflow: hidden;
 }
@@ -233,6 +233,11 @@ header .textos-header{
 }
 
 .servicio-cont{
+
+    margin: 1px;
+    border: 50px;
+
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -249,6 +254,7 @@ header .textos-header{
     padding-bottom: 10px;    
     width: 32%;
     text-align: center;
+    t
 }
 
 .servicio-ind img{
@@ -290,7 +296,7 @@ footer{
 color: #fff;
 border-bottom: 3px solid #2320d3;
 padding-bottom: 5px;
-margin-bottom: 20px;
+margin-bottom: 2px;
 }
 
 .content-foo p{
