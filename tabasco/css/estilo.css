@@ -211,6 +211,7 @@ body{
 }
 
 .knowledge_paragraph{
+    text-align:justify;
     line-height: 1.7;
     margin-bottom: 15px;
 }
