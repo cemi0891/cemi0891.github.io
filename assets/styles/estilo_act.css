@@ -403,6 +403,7 @@ header{
     cursor: pointer;
 }
 .header--opciones--submenu{
+    
     margin-top: 1px;
     text-align: center;
 }
@@ -413,6 +414,10 @@ header{
     color: rgb(177, 17, 17);
 }
 .contenido__opciones{
+        
+    margin-bottom: 0%;             /* aqui*/
+    margin-top: 0%;                
+
     color: black;
     display: flex;
     padding: 0px;
@@ -477,11 +482,19 @@ header{
 }
 
 /* ACTIVADO */
+
+
+
+
+
+
+
+
 .btn-acordeon ~ .contenido__opciones{
     position: block;
     color: rgb(185, 14, 14);
     max-height: 1200px;
-    padding: 5px;
+    padding: 1px;
 }
 
 .dropdown__arrow{
@@ -531,7 +544,7 @@ header{
 footer{
     position: absolute;
     width: 100%;
-    background-color: #3586ff;
+    background-color: #777777;
     min-height: 100px;
     height: 300px;
     padding: 20px 50px;
