@@ -347,6 +347,8 @@ header{
 /* pruebas de opciones dropdown */
 
 .poblacion__opciones--1{ 
+    border: 1px solid #2320d3;
+    border-radius: 3%;
     position: relative;
     left: auto;
     top: 1rem;
@@ -477,7 +479,7 @@ header{
 /* ACTIVADO */
 .btn-acordeon ~ .contenido__opciones{
     position: block;
-    color: black;
+    color: rgb(185, 14, 14);
     max-height: 1200px;
     padding: 5px;
 }
@@ -772,7 +774,7 @@ footer .waves#wave4{
 /*Codigo para aplicar el diseño responsivo*/
 @media screen and (max-width: 1320px){
     .menu__archivos--titulo span{
-        left: 10px;
+        left: 20px;
     }
     .tooltips .icon-info-respo{
         left: 25.5rem;
