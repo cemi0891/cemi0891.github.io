@@ -11,8 +11,8 @@ body{
 }
 /* 1 */
 .container{
-    width: 80%;
-    max-width: 1200px;
+    width: 95%;
+    max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
@@ -156,12 +156,19 @@ body{
     margin-bottom: 25px;
 }
 
-
-.about_paragraph{
+.about_ceieg{
+    color: #1a1c83;
     line-height: 1.7;
 }
 
+.about_paragraph{
+    color: #080686;
+    line-height: 1.2;
+}
+
 .about_main{
+    border: 1px solid #080686;
+    border-radius: 3%;
     padding: 80px;
     display: grid;
     width: 90%;
@@ -421,7 +428,7 @@ body{
 
 /* footer */
 .titulo{
-    color:#bcbdce;
+    color:#080686;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
@@ -429,7 +436,7 @@ body{
 }
 
 footer{
-    background: #414141;
+    background: #777777;
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
@@ -450,7 +457,7 @@ footer{
 
 .content-foo h4{
 color: #fff;
-border-bottom: 3px solid #af20d3;
+border-bottom: 3px solid #080686;
 padding-bottom: 5px;
 margin-bottom: 20px;
 }
