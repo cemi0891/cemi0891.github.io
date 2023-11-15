@@ -13,7 +13,7 @@ body{
     border-bottom: 1px;
     padding: 60px 0;
     width: 90%;
-    max-width: 1150px;
+    max-width: 1155px;
     margin: auto;
     overflow: hidden;
 }
@@ -235,7 +235,7 @@ header .textos-header{
 .servicio-cont{
 
     margin: 1px;
-    border: 50px;
+    border: 40px;
 
 
     display: flex;
@@ -247,14 +247,14 @@ header .textos-header{
     
 
     border: 1px solid #1a1c83;
-    border-radius: 5%;
-    padding-top: 0px;
+    border-radius: 4%;
+    padding-top: 3px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 9px;
     padding-bottom: 10px;    
     width: 32%;
     text-align: center;
-    t
+    
 }
 
 .servicio-ind img{
