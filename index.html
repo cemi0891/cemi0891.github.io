@@ -11,14 +11,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        
-
-        <!--nav>
-            <a href="#">SNIEG</a>
-            <a href="#">Entidades</a>
-            <a href="#">Contacto</a>
-        </nav-->
+    <header>  
+        <nav class="nav container">
+            <ul class="nav_link nav_link--menu">
+                <li class="nav_items">
+                    <a href="#punto1" class="nav_links">SNIEG</a>  
+                </li> 
+                <li class="nav_items">
+                    <a href="#estados" class="nav_links">Entidades</a>  
+                </li>
+                <li class="nav_items">
+                    <a href="#contac" class="nav_links">Contacto</a>  
+                </li>
+            </ul>
+        </nav>
 
       
 
@@ -33,7 +39,7 @@
 
     </header>
     <main>
-        <section class="contenedor sobre-nosotros">
+        <section class="contenedor sobre-nosotros" id="punto1">
             <h2 class="titulo">Sistema Nacional de Información Estadística y Geográfica</h2>
             <div class="contenedor-sobre-nosotros">
                 <img src="img/snieg.JPG" alt="" class="imagen-about-us"> 
@@ -54,7 +60,7 @@
             </div>            
         </section>
         <section class="portafolio">
-            <div class="contenedor">
+            <div class="contenedor" id="estados">
                 <h2 class="titulo">Entidades</h2>
                 
                 <div class="galeria-port">
@@ -106,7 +112,7 @@
                 </div>
             </div>
         </section-->
-        <section class="about-servicies">
+        <section class="about-servicies" id="contac">
             <div class="contenedor">
                 <h2 class="titulo">Dirección de Promoción y Concertación.</h2>
                 <div class="servicio-cont">

@@ -28,6 +28,37 @@ body{
 /* header */
 
 
+.nav{
+    --padding-container:0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.nav_title{
+    font-weight: 300;
+}
+
+
+.nav_link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+
+.nav_items{
+    list-style: none;
+}
+
+
+.nav_links{
+    color: #fff;
+    text-decoration: none;
+}
 
 
 
