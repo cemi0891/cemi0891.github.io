@@ -24,6 +24,11 @@ function itemMenu(config) {
         subSubElement.textContent = `${lastlevel.titulo}`;
         subSubElement.onclick = () => {
           showPDF(lastlevel.url);
+          let i = document.getElementById('previsual');
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
         } 
         subSubMenu.appendChild(subSubElement);
       }  
