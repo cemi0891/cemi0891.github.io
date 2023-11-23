@@ -312,10 +312,9 @@ header {
     overflow-y: auto;
 }
 .menu__archivos--titulo{
-    background-color: #7a7a7a; 
-       
+    background-color: #c5c5c5; 
     border-radius: 15px 15px  0 0;
-    padding-top: 1px;
+    padding-top: 8px;
     text-align: center;
     font-size: 22px;
     width: 100%;
@@ -325,7 +324,7 @@ header {
     color: #000000;
     padding: 4px;
     right: 22.5rem;
-    top: 8px;
+    top: 2px;
 }
 .menu__archivos .archivos{
     color: #000;
@@ -898,6 +897,7 @@ footer .waves#wave4{
         font-size: 20px;
     }
     .menu__archivos--titulo{
+        height: 40px;
         font-size: 17px;
     }
     .tooltips .icon-info-respo{

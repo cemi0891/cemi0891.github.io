@@ -1,13 +1,19 @@
-$(document).ready(function(){
-  $(".menu-item, .sub-menu-item").click(function(event){
-  event.stopPropagation(); // Prevent the click event from propagating to the parent menu item
+$(document).ready(function() {
+  $(".menu-item, .sub-menu-item").click(function(event) {
+      event.stopPropagation();
 
-  var subMenu = $(this).next(".sub-menu");
-  
-  if (subMenu.length > 0) {
-      $(this).toggleClass("active");
-      subMenu.slideToggle();
-  }
+      // 1. Quitar la clase "activado" de cualquier otro elemento
+      $(".menu-item, .sub-menu-item").removeClass("active");
+
+      // 2. Agregar la clase "activado" al elemento actual
+      $(this).addClass("active");
+
+      var subMenu = $(this).next(".sub-menu");
+      if (subMenu.length > 0) {
+          // Tu lógica para mostrar/ocultar submenú
+          $(this).toggleClass("active");
+          subMenu.slideToggle();
+      }
   });
 });
 
