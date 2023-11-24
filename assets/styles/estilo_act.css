@@ -1199,7 +1199,7 @@ footer .waves#wave4{
     }
     /*Footer*/
     .footer_menu--redes .social__icon{
-        left: 1rem;
+        left: 10rem;
         top: 45px;
      }
      footer .social__icon li .footer_a{
@@ -1211,7 +1211,7 @@ footer .waves#wave4{
      }
      .logo_inegi{
         top: -25px;
-        left: 2rem;
+        left: rem;
         width: 70%;
      }
      .copy{

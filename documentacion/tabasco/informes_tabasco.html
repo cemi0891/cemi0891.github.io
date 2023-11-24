@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="text/css" href="../../descarga/img_des/Imagen-icono_programa.ico">
-    
+    <link rel="stylesheet" href="../../assets/styles/icons.css">
+
     <!-- Estilos -->
     <link rel="stylesheet" href="../../assets/styles/estilo_act.css">
     <link rel="stylesheet" href="../../assets/styles/collapsible.css">
     
-    <title>actas</title>    
+    <title>informes_tabasco</title>    
 </head>
 
 <body>
@@ -32,13 +33,7 @@
         </div>
         <span class="texto">Regresar</span>
     </a>
-
-    <a href="../../descarga.html#" class="tooltips" aria-hidden="true">
-        <span class="icon-info icon-info-respo">
-            <span class="caja__info"><b>Informes del CEIEG:</b><br><br> Documentos en los que se establece los principales temas y asuntos expuestos durante las sesiones del CEIEG. De acuerdo con las Reglas para la integración y operación de los Comités Técnicos Especializados (RIOCTE) se deberá sesionar por lo menos dos veces al año. </span>
-        </span>
-    </a> 
-
+  
     <!-- Menu de contenido -->
     <div class="menu__archivos" >
         <h2 class="menu__archivos--titulo">Informes del CEIEG Tabasco<span class="icon-file-pdf icon__pdf"></span></h2>
@@ -109,8 +104,10 @@
         <p class="copy">© Departamento de Comité Estatal</p>
 
     </footer>
-
-    <!-- Scripts -->
+<!-- SCRIPTS -->
+    <!-- jquery -->
+    <script src="../../assets/js/jquery.js"></script>
+    <!-- PDF Viewer -->
     <script>
         var previsual = null;
         var pdfViewer = null; 
@@ -130,6 +127,7 @@
     </script>
     <script src="../../assets/js/menu.js"></script>
     <script src="../../assets/js/collapsible.js"></script>
+    <!-- Data -->
     <script>
         var config = [
             {
@@ -340,5 +338,9 @@
         ];
         itemMenu(config);
     </script>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../../assets/styles/estilo_act.css">
+    <link rel="stylesheet" href="../../assets/styles/collapsible.css">
+    </body>
 </body>
 </html>
