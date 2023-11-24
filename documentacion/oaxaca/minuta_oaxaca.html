@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="text/css" href="../../descarga/img_des/Imagen-icono_programa.ico">
+    <link rel="stylesheet" href="../../assets/styles/icons.css">
     
-    <!-- Estilos -->
-    <link rel="stylesheet" href="../../assets/styles/estilo_act.css">
-    <link rel="stylesheet" href="../../assets/styles/collapsible.css">
-    
-    <title>minutas</title>    
+    <title>minutas_oaxaca</title>    
 </head>
 
 <body>
@@ -32,13 +29,7 @@
         </div>
         <span class="texto">Regresar</span>
     </a>
-
-    <a href="../../descarga.html#" class="tooltips" aria-hidden="true">
-        <span class="icon-info icon-info-respo">
-            <span class="caja__info"><b>Minutas del CEIEG Oaxaca:</b><br><br></span>
-        </span>
-    </a> 
-
+    
     <!-- Menu de contenido -->
     <div class="menu__archivos" >
         <h2 class="menu__archivos--titulo">Minutas del CEIEG Oaxaca<span class="icon-file-pdf icon__pdf"></span></h2>
@@ -69,11 +60,11 @@
         <div class="footer_menu--redes">
             <h2>Redes sociales</h2>
             <ul class="social__icon">
-                <li><a href="actas_chi.html" class="footer_a"><span class="icon-facebook"></span></a></li>
-                <li><a href="actas_chi.html" class="footer_a"><span class="icon-twitter"></span></a></li>
-                <li><a href="actas_chi.html" class="footer_a"><span class="icon-youtube"></span></a></li>
-                <li><a href="actas_chi.html" class="footer_a"><span class="icon-instagram"></span></a></li>
-            </ul>
+              <li><a href="http://www.facebook.com/pages/inegi-informa/180299958681029" class="footer_a"><span class="icon-facebook"></span></a></li>
+              <li><a href="http://twitter.com/inegi_informa" class="footer_a"><span class="icon-twitter"></span></a></li>
+              <li><a href="https://www.youtube.com/user/INEGIInforma" class="footer_a"><span class="icon-youtube"></span></a></li>
+              <li><a href="https://www.instagram.com/inegi_informa/" class="footer_a"><span class="icon-instagram"></span></a></li>
+          </ul>
             <img src="../../descarga/img_des/logoinegibco.png" alt="Logo Inegi" class="logo_inegi">
                 <a href="http://www.facebook.com/pages/inegi-informa/180299958681029">Facebook</a>
                 <a href="http://twitter.com/inegi_informa">Twitter</a>
@@ -111,6 +102,9 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="../../assets/js/jquery.js"></script>
+    <!-- PDF Viewer -->
+
     <script>
         var previsual = null;
         var pdfViewer = null; 
@@ -128,8 +122,12 @@
             document.getElementById('tmp').setAttribute("data", pdfURL);
         }
     </script>
+
+    <!-- Menu collapsible -->
     <script src="../../assets/js/menu.js"></script>
     <script src="../../assets/js/collapsible.js"></script>
+
+    <!-- Data -->
     <script>
         var config =[
   {
@@ -350,5 +348,8 @@
 
         itemMenu(config);
     </script>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../../assets/styles/estilo_act.css">
+    <link rel="stylesheet" href="../../assets/styles/collapsible.css">
 </body>
 </html>
