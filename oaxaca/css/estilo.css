@@ -65,6 +65,25 @@ body{
     border-radius: 5px;
 }
 
+.boton_entidades {
+    background: #333f9c;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    position:relative;
+    text-decoration: none;
+    top: -2rem;
+    
+    left: 390px;
+    height: 35px;
+    color: #fff; 
+    display: inline-flex;
+    align-items: center;/*Centrar de manera vertical*/
+    justify-content: center;/*Centrar de manera horizontal*/
+    width: 100px;
+    transition: all .3s ease;
+    border-radius: 15px;
+}
 
 
 .nav{
