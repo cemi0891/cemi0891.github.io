@@ -1,5 +1,6 @@
 .menu-item,
 .sub-menu-item {
+font-weight:850;
 cursor: pointer;
 padding: 12px;
 text-align: left;
@@ -10,11 +11,16 @@ background-color: #f2f2f2;
 
 .sub-menu {
 display: none;
+color: rgb(159, 160, 160);
+font-weight:10;
 overflow: hidden;
 transition: max-height 0.4s ease-out;
 }
 
 .sub-menu.active {
+  color: #585757;
+  font-size: 14px;
+  
 display: block;
 }
     
