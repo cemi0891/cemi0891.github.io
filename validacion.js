@@ -7,8 +7,9 @@ function validar (){
 
     console.log(user);
     if(user==c && pass==u){           
-    window.location="home.html";}
-    else{
+    window.location="home.html";
+    localStorage.contra =pass
+    }else{
     alert("Ingresa usuario y contraseña correcta");
     }
 }
