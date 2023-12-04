@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(/img/FondoVirtual.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+
+
+
+
+
+  .login-box {
+    width: 337px;
+    height: 300px;
+    background: #446401;
+    color: #fff;
+    border-radius: 5%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 20px 30px;
+  }
+
+  .login-box .avatar {
+    width: 95px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -68px;
+    left: calc(52% - 50px);
+  }
+
+
+    .titulos {
+    font-size: 19px;
+  }
+  
+  .login-box input {
+    
+    padding: 2px;
+    text-align: left;
+    font-size: 22.5px;
+  }
+
+  .login-box .{}
+  .Boton_entrar{
+   text-decoration: none;
+    text-align: center;
+    border-bottom: #030164;
+  }
+
+  .login-box h1 {
+    margin: 0;
+    padding: 0 0 10px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+
+
+  

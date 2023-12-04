@@ -1,40 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Login Form Design One | Fazt</title>
-    <link rel="stylesheet" href="/css/contraseña.css">
-  </head>
-  <body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/contra.css">
+</head>
+<body>
 
-    <div class="login-box">
-      <img src="img/snieg1.JPG" class="avatar" alt="Avatar Image">
-      <h1>Comités Estatales Dirección Regional Sur</h1>
-      <form>
-        <!-- USERNAME INPUT -->
-        <label for="username">Usuario</label>
-        <input type="text" placeholder="Usuario">
+   <div class="login-box">
+    <img src="img/snieg1.JPG" class="avatar" alt="Avatar Image">  
+    <h1>Comités Estatales Dirección Regional Sur</h1>
         
-        
-        <!-- PASSWORD INPUT -->
-        <label for="password">Contraseña</label>
-        <input type="password" placeholder="Contraseña">
-        
-        <!--input type="submit" value="Entar"-->
-        <a class="boton_entrar" href="home.html" aria-hidden="true">
-          <span class="texto">Entrar</span>                    
-        </a>
-              
-        <!--input type="submit" value="Recordar"-->
-        
-        <div>
-          <a class="recordar" href="home.html" aria-hidden="true">
-            <span class="texto">Recordar Datos</span>
-          </a>
-          
-        </div>
-      </form>
-    </div>
-  </body>
-  
+        <form name=from action="InicioSesion">
+            <p class="titulos">Usuario: <input type="text" id="login">
+            <div>    
+            <p class="titulos">Contraseña: <input type=password id="password">
+            </div>            
+            <Div class="Boton_entrar">
+                <input onclick=validar() type=button value="Iniciar">
+            </Div>
+      <script src="validacion.js">
+      </script> 
+
+</div>
+
+</form>
+
+</body>
+
+
 </html>
