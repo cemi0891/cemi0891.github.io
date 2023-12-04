@@ -1,39 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(/img/FondoVirtual.jpg) no-repeat center top;
+    background: url(../img/bg.jpeg) no-repeat center top;
     background-size: cover;
     font-family: sans-serif;
     height: 100vh;
   }
   
-
-
-
-  .boton_entrar{
-    
-    background: #333030;
-        cursor: pointer;
-    font-size: 2px;
-    position:relative;            
-    left: 75px;
-    height: 40px;
-    color: #fffefe; 
-    display: inline-flex;
-    align-items: center;/*Centrar de manera vertical*/
-    justify-content: center;/*Centrar de manera horizontal*/
-    width: 100px;
-    transition: all .3s ease;
-    border-radius: 15px;
-}
-
-.recordar{
- color: #000;
- 
-}
-
-
-
   .login-box {
     width: 300px;
     height: 360px;
