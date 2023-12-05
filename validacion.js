@@ -6,9 +6,9 @@ function validar (){
     var pass=document.getElementById('password').value
 
     console.log(user);
-    if(user==c && pass==u){           
-    window.location="home.html";
-    localStorage.contra =pass
+    if(user==c && pass==u){     
+        localStorage.setItem('logged', true);
+        window.location="home.html";
     }else{
     alert("Ingresa usuario y contraseña correcta");
     }
