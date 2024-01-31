@@ -120,8 +120,13 @@ header .textos-header{
     position: absolute;
     bottom: 0;
     width: 100%;
-
+    animation: wave 20s linear infinite;
 }
+
+
+
+
+
 
 /*About us*/
 .contenedor-sobre-nosotros{
@@ -189,6 +194,7 @@ header .textos-header{
     display: block;
 }
 
+/* efecto logo inegi */
 .hover-galeria{
     position: absolute;
     width: 100%;
