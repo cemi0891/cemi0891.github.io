@@ -189,25 +189,23 @@ body{
 .about_main{
     border: 1px solid #080686;
     border-radius: 3%;
-    padding: 80px;
+    padding: 100px;
     display: grid;
-    width: 90%;
-    margin: 0 auto;
-    gap: 1em;
+    width: 100%;
+    margin:0 auto;
+   
+    gap: 3em;
     overflow: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+   }
 
-}
-
-.about_icons{
+.about_icons{   
     display: grid;
     gap: 1em;
     justify-items: center;
-    width: 260px;
+    width: 360px;
     overflow: hidden;
-    margin: auto;
-    
-    
+    margin: 1;        
 }
 
 .about_icon{

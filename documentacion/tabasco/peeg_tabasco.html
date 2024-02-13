@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="text/css" href="../../img/Imagen-icono_programa.ico">  
+    <link rel="stylesheet" href="../../assets/styles/icons.css">  
+    <title>actas_oaxaca</title>    
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <img src="../../img/Encabezado.png" alt="Encabezado" class="img-encabezado">
+            <hr class="linea__navbar-gris">
+            <hr class="linea__navbar-verde">
+            <hr class="linea__navbar-azul">
+            <hr class="linea__navbar-amarrillo">
+            <img src="../../img/LOGO-SNIEG-ENCABEZADO.png" alt="Logo SNIEG" class="logo__navbar--SNIEG">           
+            <img src="../../img/logo-inegi.png" alt="Logo INEGI" class="logo__navbar--INEGI">
+        </div>
+    </header>
+
+    <a class="boton_regreso" href="../../oaxaca.html#documentacion" aria-hidden="true">
+        <div class="icono">
+            <span class="icon-undo2 svg"></span>
+        </div>
+        <span class="texto">Regresar</span>
+    </a>
+
+    <!-- Menu de contenido -->
+    <div class="menu__archivos" >
+        <h2 class="menu__archivos--titulo">PEEG Tabasco<span class="icon-file-pdf icon__pdf"></span></h2>
+        <ul class="dropdown" id="menu" style="padding: 16px;"> </ul> 
+    </div>
+
+    <!-- PDF visor -->
+    <div class="previsual" aria-hidden="true">
+        <div class="previsual__imagen" id="previsual__imagen" style="display: block;">
+            <img src="../../img/imagen_selecciona.svg" alt="Imagen de bienvenida" class="previsual__imagen--edit">
+        </div>
+        
+        <!-- Archivo por2023 -->
+        <div class="previsual__archivo" id="pdfview" style="display: none;">
+            <object id="tmp" class="previsual__archivo--tamaño" type="application/pdf" data="../../descarga/Actas_des/Chiapas/Actas/07_ACTA_REINSTALACION_CEIEG_2013.pdf"></object>
+        </div>
+    </div>
+
+    <!-- Pie de pagina -->
+    <footer aria-hidden="true">
+        <div class="waves">
+            <div class="waves" id="wave1"></div>
+            <div class="waves" id="wave2"></div>
+            <div class="waves" id="wave3"></div>
+            <div class="waves" id="wave4"></div>
+        </div>
+        
+        <div class="footer_menu--redes">
+            <h2>Redes sociales</h2>
+            <ul class="social__icon">
+                <li><a href="http://www.facebook.com/pages/inegi-informa/180299958681029" class="footer_a"><span class="icon-facebook"></span></a></li>
+                <li><a href="http://twitter.com/inegi_informa" class="footer_a"><span class="icon-twitter"></span></a></li>
+                <li><a href="https://www.youtube.com/user/INEGIInforma" class="footer_a"><span class="icon-youtube"></span></a></li>
+                <li><a href="https://www.instagram.com/inegi_informa/" class="footer_a"><span class="icon-instagram"></span></a></li>
+            </ul>
+            <img src="../../img/logoinegibco.png" alt="Logo Inegi" class="logo_inegi">
+                <a href="http://www.facebook.com/pages/inegi-informa/180299958681029">Facebook</a>
+                <a href="http://twitter.com/inegi_informa">Twitter</a>
+                <a href="https://www.youtube.com/user/INEGIInforma">Youtube</a>
+                <a href="https://www.instagram.com/inegi_informa/">Instagram</a>
+        
+        </div>        
+        <div class="footer_menu--interes">
+            <h2>Sitios de interés</h2>           
+            <a href="https://www.snieg.mx/">SNIEG</a>
+            <a href="https://www.inegi.org.mx/">INEGI</a>            
+            <a href="https://www.snieg.mx/RNIEG/">RNIEG</a>
+            <a href="https://tabasco.gob.mx/ceiegt">CEIEG TABASCO</a>    
+        
+        </div>
+
+        <label class="depa">Coordinación Estatal Tabasco </label>
+        <p class="copy">© Departamento de Comité Estatal</p>
+
+    
+
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- jquery -->
+    <script src="../../assets/js/jquery.js"></script>
+    <!-- PDF Viewer -->
+    <script>
+        var previsual = null;
+        var pdfViewer = null; 
+        document.addEventListener("DOMContentLoaded", function() {
+            previsual = document.getElementById('previsual__imagen'); 
+            pdfViewer = document.getElementById("pdfview"); 
+        });
+
+        function showPDF(pdfURL) { 
+            previsual.style.display = 'none';
+            setTimeout(() => {
+                pdfViewer.style.display = 'block';
+                
+            }, 100);
+            document.getElementById('tmp').setAttribute("data", pdfURL);
+        }
+    </script>
+    <!-- Menu collapsible -->
+    <script src="../../assets/js/menu.js"></script>
+    <script src="../../assets/js/collapsible1.js"></script>
+    <!-- Data -->
+    <script>
+        var config =[
+
+   
+
+  {
+    periodo: " Programa Estatal de Estadística y Geografía",
+    anios: [
+      {
+        anio: " ",
+        documentos: [
+          {
+            titulo: "* Periodo 2019-2024",
+            url: "./pdfs/peeg/PEEG_Tabasco_2019-2024.pdf"
+          },
+          {
+            titulo: "* Pendiente",
+            url: "./pdfs/peeg/PEEG_Tabasco_2019-2024.pdf"
+          }
+        ]
+      }
+    ]
+  }
+
+ 
+];
+
+
+
+        itemMenu(config);
+    </script>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="../../assets/styles/estilo_act.css">
+  <link rel="stylesheet" href="../../assets/styles/collapsible1.css">
+</body>
+</html>
