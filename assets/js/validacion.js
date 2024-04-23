@@ -11,3 +11,18 @@ function validar (){
     alert("Ingresa usuario y contraseña correcta");
     }
 }
+/* var input = document.getElementById("password"); */
+
+/* input.addEventListener("keypress",function(event){
+    console.log(input);
+    if(event.key === 'Enter'){
+        alert('Entre')
+    }
+}) */
+window.addEventListener("keypress", (event) => {
+  
+    if(event.key === 'Enter'){
+        validar();
+    }
+    
+})
