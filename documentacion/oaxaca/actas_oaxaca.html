@@ -25,8 +25,15 @@
         <div class="icono">
             <span class="icon-undo2 svg"></span>
         </div>
-        <span class="texto">Regresar</span>
+          <span class="texto">Regresar</span>
     </a>
+
+    <button class="boton_regreso"  id="descargar" onclick="descargar()" aria-hidden="true">
+      <div class="icono">
+          <span class="icon-undo2 svg"></span>
+      </div>
+        <span class="texto">Descargar</span>
+    </button>
 
     <!-- Menu de contenido -->
     <div class="menu__archivos" >
@@ -36,6 +43,7 @@
 
     <!-- PDF visor -->
     <div class="previsual" aria-hidden="true">
+      
         <div class="previsual__imagen" id="previsual__imagen" style="display: block;">
             <img src="../../img/imagen_selecciona.svg" alt="Imagen de bienvenida" class="previsual__imagen--edit">
         </div>
@@ -44,10 +52,12 @@
         <div class="previsual__archivo" id="pdfview" style="display: none;">
             <object id="tmp" class="previsual__archivo--tamaño" type="application/pdf" data="../../descarga/Actas_des/Chiapas/Actas/07_ACTA_REINSTALACION_CEIEG_2013.pdf"></object>
         </div>
+        
     </div>
 
     <!-- Pie de pagina -->
     <footer aria-hidden="true">
+      
         <div class="waves">
             <div class="waves" id="wave1"></div>
             <div class="waves" id="wave2"></div>
@@ -92,18 +102,54 @@
     <script>
         var previsual = null;
         var pdfViewer = null; 
+        var pdfUrlGlobal = null;
+        var x = document.getElementById("descargar");
+        x.style.display = "none";
+        /* if (x.style.display === "none") { */
+        
+   /*  } else {
+        x.style.display = "none";
+    } */
         document.addEventListener("DOMContentLoaded", function() {
             previsual = document.getElementById('previsual__imagen'); 
             pdfViewer = document.getElementById("pdfview"); 
         });
 
-        function showPDF(pdfURL) { 
+        function descargar(){
+        
+            if(pdfUrlGlobal === null){
+            alert('No encontre archivos')
+
+          }else{
+            alert('Si hay archivos',pdfUrlGlobal);
+          
+            window.open(pdfUrlGlobal, '_blank');
+          }
+
+          x.style.display = "none";
+        }
+
+        function obtenerUrl(url){
+          alert('Aqui estoy')
+          pdfUrlGlobal = url
+          
+        }
+
+        function showPDF(pdfURL,url2) { 
+        
+          
             previsual.style.display = 'none';
             setTimeout(() => {
                 pdfViewer.style.display = 'block';
                 
-            }, 100);
+            },100);
             document.getElementById('tmp').setAttribute("data", pdfURL);
+            console.log(url2);
+            obtenerUrl(url2);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } 
+           
         }
     </script>
     <!-- Menu collapsible -->
@@ -121,7 +167,8 @@
         documentos: [
           {
             titulo: "* Convenio de Instalación CEIEG",
-            url: "./pdfs/actas/20_Convenio_de_Instalación_CEIEG_2023.pdf"
+            url: "./pdfs/actas/20_Convenio_de_Instalación_CEIEG_2023.pdf#toolbar=0",
+            url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/Ed03y6a1cTZKgpfACzJC3BkB2qO4gy_UaR7-SlJxn6zzdg?e=RJvy7W"
           }
         ]
       } 
@@ -135,8 +182,9 @@
         anio: "Año 2022",
         documentos: [
           {
-            titulo: "* Instalación del Comité de Apoyo CA2022",
-            url: "./pdfs/actas/20_Instalación_del_comite_de apoyo_CA2022.pdf"
+            titulo: "* Instalación del Comité de Apoyo CA2022------",
+            url: "./pdfs/actas/20_Instalación_del_comite_de apoyo_CA2022.pdf",
+            url2: "https://365inegi-my.sharepoint.com/:f:/g/personal/cristian_maraver_inegi_org_mx/EvqxytTPmopGggi5-94em7oBsmStPf93J9eg4qVzjw-JKg?e=AFGBrL"
           }
         ]
       },

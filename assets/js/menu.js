@@ -23,7 +23,7 @@ function itemMenu(config) {
         subSubElement.className = "sub-menu-item";
         subSubElement.textContent = `${lastlevel.titulo}`;
         subSubElement.onclick = () => {
-          showPDF(lastlevel.url);
+          showPDF(lastlevel.url,lastlevel.url2);
           let i = document.getElementById('previsual');
           window.scrollTo({
             top: 0,
