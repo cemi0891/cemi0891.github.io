@@ -27,11 +27,20 @@
     </header>
 
     <a class="boton_regreso" href="../../oaxaca.html#documentacion" aria-hidden="true">
-        <div class="icono">
-            <span class="icon-undo2 svg"></span>
-        </div>
-        <span class="texto">Regresar</span>
+      <div class="icono">
+        <span class="icon-undo2 svg"></span>
+    </div>        
+      <span class="texto">Regresar</span>
+     <!--  <div>
+        <button class="boton_descarga"  id="descargar" onclick="descargar()" aria-hidden="true">
+         <span class="texto">Descargar</span>
+      </button>
+      </div>-->
     </a>
+
+<button class="boton_descarga"  id="descargar" onclick="descargar()" aria-hidden="true">
+<span class="texto">Descargar</span>
+</button>
 
     <!-- Menu de contenido -->
     <div class="menu__archivos" >
@@ -90,26 +99,59 @@
 
     </footer>
 
-    <!-- Scripts -->
-        <!-- jquery -->
-        <script src="../../assets/js/jquery.js"></script>
+    <!-- SCRIPTS -->
+    <!-- jquery -->
+    <script src="../../assets/js/jquery.js"></script>
+    <!-- PDF Viewer -->
     <script>
         var previsual = null;
         var pdfViewer = null; 
+        var pdfUrlGlobal = null;
+        var x = document.getElementById("descargar");
+        x.style.display = "none";
+        /* if (x.style.display === "none") { */
+        
+   /*  } else {
+        x.style.display = "none";
+    } */
         document.addEventListener("DOMContentLoaded", function() {
             previsual = document.getElementById('previsual__imagen'); 
             pdfViewer = document.getElementById("pdfview"); 
         });
 
-        function showPDF(pdfURL) { 
+        function descargar(){
+        
+            if(pdfUrlGlobal === null){
+            alert('No encontre archivos')
+
+          }else{
+          window.open(pdfUrlGlobal, '_blank');
+          }
+
+          x.style.display = "none";
+        }
+
+        function obtenerUrl(url){
+          pdfUrlGlobal = url
+          
+        }
+
+        function showPDF(pdfURL,url2) { 
             previsual.style.display = 'none';
             setTimeout(() => {
                 pdfViewer.style.display = 'block';
                 
-            }, 100);
+            },100);
             document.getElementById('tmp').setAttribute("data", pdfURL);
+            console.log(url2);
+            obtenerUrl(url2);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } 
+           
         }
     </script>
+     <!-- Menu collapsible -->
     <script src="../../assets/js/menu.js"></script>
     <script src="../../assets/js/collapsible.js"></script>
     <script>
@@ -122,7 +164,8 @@
                 documentos: [  
                 {
                   titulo: "* 2do. Informe Semestral  2023",
-                  url: "./pdfs/informes/20_2do_informe_sem_2023.pdf"
+                  url: "./pdfs/informes/20_2do_informe_sem_2023.pdf",
+                  url2: "./pdfs/informes/20_2do_informe_sem_2023.pdf"
                 },              
                 {
                   titulo: "* 1er. Informe Semestral 2023",

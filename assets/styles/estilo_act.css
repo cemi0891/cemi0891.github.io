@@ -7,7 +7,7 @@
 }
 
 .boton_regreso {
-    background: #b60303;
+    background: #828080ea;
     border: none;
     cursor: pointer;
     font-size: 15px;
@@ -25,6 +25,24 @@
     border-radius: 5px;
 }
 
+.boton_descarga {
+    background: #2e8204ea;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    position: relative;
+    text-decoration: none;
+    top: 8rem;
+    left: 250px;
+    height: 40px;
+    color: #fff; 
+    display: inline-flex;
+    align-items: center;/*Centrar de manera vertical*/
+    justify-content: center;/*Centrar de manera horizontal*/
+    width: 100px;
+    transition: all .3s ease;
+    border-radius: 5px;
+}
 
 
 
