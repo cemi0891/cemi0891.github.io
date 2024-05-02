@@ -10,10 +10,10 @@
     background: #828080ea;
     border: none;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 12.5px;
     position: relative;
     text-decoration: none;
-    top: 8rem;
+    top: 11.5rem;
     left: 50px;
     height: 40px;
     color: #fff; 
@@ -22,18 +22,18 @@
     justify-content: center;/*Centrar de manera horizontal*/
     width: 100px;
     transition: all .3s ease;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .boton_descarga {
     background: #2e8204ea;
     border: none;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 13px;
     position: relative;
     text-decoration: none;
-    top: 8rem;
-    left: 250px;
+    top: 9rem;
+    left: 280px;
     height: 40px;
     color: #fff; 
     display: inline-flex;
@@ -312,7 +312,7 @@ header {
 /* Menu archivos */
 .menu__archivos{
     position: relative;
-    top: 11rem;
+    top: 12rem;
     left: 4rem;
     /* background-color: red; */
     /* border: 2px solid #7a7a7a; */
