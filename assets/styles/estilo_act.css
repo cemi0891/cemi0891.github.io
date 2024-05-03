@@ -596,7 +596,7 @@ footer{
 
 .footer_menu--redes{
     /* background-color: red; */
-    font-size: 13.5px;
+    font-size: 17px;
     position: absolute;
     top: 3rem;
     left: 11rem;
@@ -660,7 +660,7 @@ footer{
 
 .footer_menu--interes{
     /* background-color: red; */
-    font-size: 12px;
+    font-size: 16px;
     position: absolute;
     right: 15rem;
     top: 5rem;
@@ -712,7 +712,7 @@ footer .social__icon li, footer .footer_menu li, .social__icon__interes{
     list-style: none;
 }
 footer .social__icon li .footer_a, .social__icon__interes .footer_a__interes{
-    font-size: 10px;
+    font-size: 16px;
     color: #fff;
     margin: 5px .5rem;
     border: .5px solid #fff;
@@ -802,7 +802,7 @@ footer .waves#wave4{
 .depa{
     position: absolute;
     top: 15rem;
-    font-size: 18px;
+    font-size: 25px;
     color: #fff;
     transition: all .3s ease;
 }
@@ -1126,7 +1126,7 @@ footer .waves#wave4{
         width: 6%;
     }
     .copy{
-        font-size: 7px;
+        font-size: 10px;
      }
 }
 @media screen and (max-width: 550px) {
@@ -1154,7 +1154,7 @@ footer .waves#wave4{
      /*Footer*/
      footer p{
         top: 7.7rem;
-        font-size: 14px;
+        font-size: 20px;
         right: -12rem;
     }
     .depa{
@@ -1164,10 +1164,10 @@ footer .waves#wave4{
     }
     .footer_menu--interes{
         right: 1rem;
-        font-size: 11px;
+        font-size: 17px;
     }
     .footer_menu--redes{
-        font-size: 11px;
+        font-size: 20px;
         left: -5rem;
     }
     .logo_inegi{
@@ -1177,13 +1177,13 @@ footer .waves#wave4{
     }
     .footer_menu--redes a{
         position: relative;
-        top: 15px;
+        top: 17px;
      }
      .footer_menu--redes .social__icon{
         top: 2.5rem;
      }
      .copy{
-        font-size: 7px;
+        font-size: 10px;
      }
 }
 
@@ -1236,11 +1236,11 @@ footer .waves#wave4{
         top: 45px;
      }
      footer .social__icon li .footer_a{
-        font-size: 7px;
+        font-size: 10px;
      }
      .footer_menu--redes a{
         position: relative;
-        top: 15px;
+        top: 10px;
      }
      .logo_inegi{
         top: -25px;
@@ -1248,6 +1248,6 @@ footer .waves#wave4{
         width: 70%;
      }
      .copy{
-        font-size: 7px;
+        font-size: 10px;
      }
 }
