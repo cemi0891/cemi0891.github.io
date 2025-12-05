@@ -145,17 +145,109 @@
             if (x.style.display === "none") {
                 x.style.display = "block";
             } 
-           
         }
     </script>
-
     <!-- Menu collapsible -->
     <script src="../../assets/js/menu.js"></script>
     <script src="../../assets/js/collapsible.js"></script>
-
     <!-- Data -->
     <script>
         var config = [
+                        {
+                periodo: "PERIODO 2025-2030",
+                anios: [
+                /*{
+                    anio: "Año 2024",
+                    documentos: [ 
+                    {
+                        titulo: "* 1a Reunión Ordinaria CEIEG",
+                        url: "./pdfs/minutas/1a_Reunion_Ordinaria_CEIEG-07-01-01-24.pdf",
+                        url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/ERIxDBlWol5BgcHtyhRelOkBdUc-0b6-DDYOoanRqvgX5Q?e=7AyJnk"
+                    },
+                    {
+                        titulo: "* 2da Reunión Ordinaria CEIEG",
+                        url: "./pdfs/minutas/CHS_2a_Reunion_Ordinaria_CEIEG_29_08_2024.pdf",
+                        url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EW5ZFdMUxdpGrU3RA_J-Y2ABdzgn-DBPuPe7Cn-TbzbH8g?e=WwSBkU"
+                    }                     
+                    ]
+                },
+                {
+                    anio: "Año 2023",
+                    documentos: [
+                    {
+                        titulo: "* 1a Reunión Ordinaria CEIEG",
+                        url: "./pdfs/minutas/07_Minuta_1a_Reunion_Ordinaria_CEIEG_27_07_2023.pdf",
+                        url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EVCIjUnpipFBk1Q42SNfJmcBSjC5Z-Pvvqa6gG4DU2yNtQ?e=1FSweD"
+                    },
+                    {
+                        titulo: "* 2da Reunión Ordinaria CEIEG",
+                        url: "./pdfs/minutas/CEIEG-07-01-02-23.pdf",
+                        url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/ESSBzE8oRuVOqR4EGhJ2YSsBR9MlxEH5_5fHr-2b7W2wKA?e=OkWx7H"
+                    }
+                    ]
+                },
+                {
+                    anio: "Año 2022",
+                    documentos: [
+                    {
+                        titulo: "* 1a Reunión Ordinaria CEIEG",
+                        url: "./pdfs/minutas/CHS_1a_Reunion_Ordinaria_CEIEG_28junio2022.pdf",
+                        url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EX1p74GvF1JCtbOAqQ_eZXwBWKH_XAC5HjesiGB91m4qQg?e=7dNxEd"
+                    },
+                    {
+                        titulo: "* 2da Reunión Ordinaria CEIEG",
+                        url: "./pdfs/minutas/CHS_2da_Reunion_Ordinaria_CEIEG_16noviembre2022.pdf",
+                        url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EUpPsZfdo05JsMa3HnAXnBABGbce1zMq_dgzsUUwRVsOng?e=wJaK5G"
+                    },
+                    {
+                        titulo: "* 1a Sesión Ordinaria CEIEG para apoyo al Censo Agropecuario 2022",
+                        url: "./pdfs/minutas/07_01_Instalación_apoyo Censo_Agropecuario_2022.pdf",
+                        url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EZ_YBK57DvpFp13JyMadYbIBwZkO8qVjM35eCnE7awZsPg?e=dgXBHx"
+                    }
+                    ]
+                },
+                {
+                    anio: "Año 2021",
+                    documentos: [
+                    {
+                        titulo: "* 1a Reunión Ordinaria CEIEG",
+                        url: "./pdfs/minutas/CHS_1a_Reunion_Ordinaria_CEIEG_27mayo2021.pdf",
+                        url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EXBYN8U-qlNImPCD17w5PFcBe2QuDdnQVc11DnDiMV61iA?e=0Ba0u5"
+                    },
+                    {
+                        titulo: "* 2da Reunión Ordinaria CEIEG",
+                        url: "./pdfs/minutas/CHS_2da_Reunion_Ordinaria_CEIEG_29noviembre2021.pdf",
+                        url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EQuY5Y_b9XBChC-DE9olRukBWzrJiG4y1XtPkgJnSOmXyg?e=A85mee"
+                    }
+                    ]
+                },
+                {
+                    anio: "Año 2020",
+                    documentos: [
+                    {
+                        titulo: "* 1ra Reunión Ordinaria CEIEG",
+                        url: "./pdfs/minutas/CHS_1ra_ordinaria_CEIEG_31enero2020.pdf",
+                        url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EUVGotCo48JFrDM9eFTZ8UsBd7J_8BXT_nP29fsf3NQALA?e=wxgtpE"
+                    },
+                    {
+                        titulo: "* 2da Reunión Ordinaria CEIEG",
+                        url: "./pdfs/minutas/CHS_2da_ordinaria_CEIEG_28agosto2020.pdf",
+                        url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EQ78bSAAo3ZHq4PR-ot_AEkBAcDBssLMZoZXK0AmINtkGg?e=04J0nJ"
+                    }
+                    ]
+                },
+                {
+                    anio: "Año 2019",
+                    documentos: [
+                    {
+                        titulo: "* 1ra Reunión Ordinaria CEIEG",
+                        url: "./pdfs/minutas/CHS_1ra_ordinaria_CEIEG_29agosto2019.pdf",
+                        url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/Eeq2UmyObPpNlmjx_P2ACAoBU_Z9jnmCKhuGUFiPDi7dcw?e=wptxPN"
+                    }
+                    ]
+                }*/
+                ]
+            },
             {
                 periodo: "PERIODO 2019-2024",
                 anios: [
@@ -189,7 +281,6 @@
                     }
                     ]
                 },
-
                 {
                     anio: "Año 2022",
                     documentos: [
@@ -197,23 +288,19 @@
                         titulo: "* 1a Reunión Ordinaria CEIEG",
                         url: "./pdfs/minutas/CHS_1a_Reunion_Ordinaria_CEIEG_28junio2022.pdf",
                         url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EX1p74GvF1JCtbOAqQ_eZXwBWKH_XAC5HjesiGB91m4qQg?e=7dNxEd"
-
                     },
                     {
                         titulo: "* 2da Reunión Ordinaria CEIEG",
                         url: "./pdfs/minutas/CHS_2da_Reunion_Ordinaria_CEIEG_16noviembre2022.pdf",
                         url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EUpPsZfdo05JsMa3HnAXnBABGbce1zMq_dgzsUUwRVsOng?e=wJaK5G"
-
                     },
                     {
                         titulo: "* 1a Sesión Ordinaria CEIEG para apoyo al Censo Agropecuario 2022",
                         url: "./pdfs/minutas/07_01_Instalación_apoyo Censo_Agropecuario_2022.pdf",
                         url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EZ_YBK57DvpFp13JyMadYbIBwZkO8qVjM35eCnE7awZsPg?e=dgXBHx"
-
                     }
                     ]
                 },
-
                 {
                     anio: "Año 2021",
                     documentos: [
@@ -221,17 +308,14 @@
                         titulo: "* 1a Reunión Ordinaria CEIEG",
                         url: "./pdfs/minutas/CHS_1a_Reunion_Ordinaria_CEIEG_27mayo2021.pdf",
                         url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EXBYN8U-qlNImPCD17w5PFcBe2QuDdnQVc11DnDiMV61iA?e=0Ba0u5"
-
                     },
                     {
                         titulo: "* 2da Reunión Ordinaria CEIEG",
                         url: "./pdfs/minutas/CHS_2da_Reunion_Ordinaria_CEIEG_29noviembre2021.pdf",
                         url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EQuY5Y_b9XBChC-DE9olRukBWzrJiG4y1XtPkgJnSOmXyg?e=A85mee"
-
                     }
                     ]
                 },
-                
                 {
                     anio: "Año 2020",
                     documentos: [
@@ -239,17 +323,14 @@
                         titulo: "* 1ra Reunión Ordinaria CEIEG",
                         url: "./pdfs/minutas/CHS_1ra_ordinaria_CEIEG_31enero2020.pdf",
                         url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EUVGotCo48JFrDM9eFTZ8UsBd7J_8BXT_nP29fsf3NQALA?e=wxgtpE"
-
                     },
                     {
                         titulo: "* 2da Reunión Ordinaria CEIEG",
                         url: "./pdfs/minutas/CHS_2da_ordinaria_CEIEG_28agosto2020.pdf",
                         url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EQ78bSAAo3ZHq4PR-ot_AEkBAcDBssLMZoZXK0AmINtkGg?e=04J0nJ"
-
                     }
                     ]
                 },
-                
                 {
                     anio: "Año 2019",
                     documentos: [
@@ -257,13 +338,11 @@
                         titulo: "* 1ra Reunión Ordinaria CEIEG",
                         url: "./pdfs/minutas/CHS_1ra_ordinaria_CEIEG_29agosto2019.pdf",
                         url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/Eeq2UmyObPpNlmjx_P2ACAoBU_Z9jnmCKhuGUFiPDi7dcw?e=wptxPN"
-
                     }
                     ]
                 }
                 ]
             },
-
             {
                 periodo: "PERIODO 2013-2018",
                 anios: [
@@ -274,17 +353,14 @@
                         titulo: "* 1ra Reunión Ordinaria CEIEG",
                         url: "./pdfs/minutas/CHS_1ra_ordinaria_CEIEG_22febrero2018.pdf",
                         url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/Efr2zjURBVdGg59dgnpFnzgByMsTAOddMQPR7pHubZ2jQg?e=IIDZA7"
-
                     },
                     {
                         titulo: "* 2da Reunión Ordinaria CEIEG",
                         url: "./pdfs/minutas/CHS_2da_ordinaria_CEIEG_5diciembre2018.pdf",
                         url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/Ecfb1z3vuARGi-UVPixuql0BslDCoKK-yC7isf6vp-UidQ?e=rajuRK"
-
                     }
                     ]
                 },
-
                 {
                     anio: "Año 2017",
                     documentos: [
@@ -292,17 +368,14 @@
                         titulo: "* 1era Reunión Ordinaria CEIEG",
                         url: "./pdfs/minutas/CHS_1era_ordinaria_CEIEG 01junio2017.pdf",
                         url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EcJYR0okmwlAta2QH26nw0YB5w4OYnkCDi_ZLo9rlxFUAg?e=EP6MDb"
-
                     },
                     {
                         titulo: "* 2da Reunión Ordinaria CEIEG",
                         url: "./pdfs/minutas/CHS_2da_ordinaria_CEIEG_23noviembre2017.pdf",
                         url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/ESor2JdslVtDlwrkr4s7tPQBtfMyFk0pDMPm_US-_uPyGQ?e=RIJUd9"
-
                     }
                     ]
                 },
-
                 {
                     anio: "Año 2016",
                     documentos: [
@@ -310,17 +383,14 @@
                         titulo: "* 1ra Reunión Ordinaria CEIEG",
                         url: "./pdfs/minutas/CHS_1ra_ordinaria_CEIEG_21abril2016.pdf",
                         url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EYJQaeZu6eRGrIC4P8fOSWwBF7VjtpJPEND3K8Fj-o1i5g?e=Dn866Y"
-
                     },
                     {
                         titulo: "* 2da Reunión Ordinaria CEIEG",
                         url: "./pdfs/minutas/CHS_2da_ordinaria_CEIEG_06diciembre2016.pdf",
                         url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EYTctYbOIQ5CurmadM8huuMBKcSGvaSZiFvwWfSw_vgpmw?e=tmQd34"
-
                     }
                     ]
                 }
-                
                 /*{
                     anio: "Año 2015",
                     documentos: [

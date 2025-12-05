@@ -25,14 +25,13 @@
         <div class="icono">
             <span class="icon-undo2 svg"></span>
         </div>        
-          <span class="texto">Regresar</span>
-         <!--  <div>
+        <span class="texto">Regresar</span>
+        <!--  <div>
             <button class="boton_descarga"  id="descargar" onclick="descargar()" aria-hidden="true">
-             <span class="texto">Descargar</span>
-          </button>
-          </div>-->
+            <span class="texto">Descargar</span>
+        </button>
+        </div>-->
         </a>
-
         <button class="boton_descarga"  id="descargar" onclick="descargar()" aria-hidden="true">
             <div>        
                 <span class="texto"> Ver documento </span>
@@ -82,23 +81,17 @@
                 <a href="https://www.youtube.com/user/INEGIInforma">Youtube</a>
                 <a href="https://www.instagram.com/inegi_informa/">Instagram</a>        
         </div>
-       
         <div class="footer_menu--interes">
             <h2>Sitios de interés</h2>           
             <a href="https://www.snieg.mx/">SNIEG</a>
             <a href="https://www.inegi.org.mx/">INEGI</a>            
             <a href="https://www.snieg.mx/RNIEG/">RNIEG</a>
             <a href="https://www.ceieg.chiapas.gob.mx/home/">CEIEG CHIAPAS</a>
-  
-      
         </div>
-  
         <label class="depa">Coordinación Estatal Chiapas </label>
         <p class="copy">© Departamento de Comité Estatal</p>
-
     </footer>
-
-     <!-- SCRIPTS -->
+    <!-- SCRIPTS -->
     <!-- jquery -->
     <script src="../../assets/js/jquery.js"></script>
     <!-- PDF Viewer -->
@@ -110,7 +103,7 @@
         x.style.display = "none";
         /* if (x.style.display === "none") { */
         
-   /*  } else {
+    /*  } else {
         x.style.display = "none";
     } */
         document.addEventListener("DOMContentLoaded", function() {
@@ -122,19 +115,15 @@
         
             if(pdfUrlGlobal === null){
             alert('No encontre archivos')
-
-          }else{
-          window.open(pdfUrlGlobal, '_blank');
-          }
-
-          x.style.display = "none";
+            }else{
+            window.open(pdfUrlGlobal, '_blank');
         }
-
+        x.style.display = "none";
+        }
         function obtenerUrl(url){
-          pdfUrlGlobal = url
-          
+        pdfUrlGlobal = url
+        
         }
-
         function showPDF(pdfURL,url2) { 
             previsual.style.display = 'none';
             setTimeout(() => {
@@ -147,7 +136,6 @@
             if (x.style.display === "none") {
                 x.style.display = "block";
             } 
-           
         }
     </script>
     <!-- Menu collapsible -->
@@ -155,39 +143,39 @@
     <script src="../../assets/js/collapsible1.js"></script>
     <!-- Data -->
     <script>
-        var config =[
-
-   
-
-  {
+    var config =[
+    {
     periodo: " Programa Estatal de Estadística y Geografía",
     anios: [
-      {
+    /*{
         anio: " ",
         documentos: [
-          {
+        {
+            titulo: "* Periodo 2025-2030",
+            url: "./pdfs/peeg/PEEG_Chiapas_2019-2024.pdf",
+            url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EWZy2yuhKAhDrLqgI1T_4hcBwkqOL8AYtr7AnHFRr3W0hw?e=yTuIEY"
+        }
+        ]
+    },  */
+    {
+        anio: " ",
+        documentos: [
+        {
             titulo: "* Periodo 2019-2024",
             url: "./pdfs/peeg/PEEG_Chiapas_2019-2024.pdf",
             url2: "https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/EWZy2yuhKAhDrLqgI1T_4hcBwkqOL8AYtr7AnHFRr3W0hw?e=yTuIEY"
-
-          }
-           /* {
+        }
+        /* {
             titulo: "* Pendiente",
             url: "./pdfs/peeg/PEEG_Chiapas_2019-2024.pdf"
           } */
         ]
-      }
+    }
     ]
-  }
-
- 
-];
-
-
-
+    }
+    ];
         itemMenu(config);
     </script>
-
   <!-- STYLES -->
   <link rel="stylesheet" href="../../assets/styles/estilo_act.css">
   <link rel="stylesheet" href="../../assets/styles/collapsible1.css">
