@@ -31,9 +31,9 @@
         </div>
         <!--  <div>
             <button class="boton_descarga"  id="descargar" onclick="descargar()" aria-hidden="true">
-             <span class="texto">Descargar</span>
-          </button>
-          </div>-->
+            <span class="texto">Descargar</span>
+        </button>
+        </div>-->
     </a>
 
     <button class="boton_descarga"  id="descargar" onclick="descargar()" aria-hidden="true">
@@ -87,7 +87,7 @@
                 <a href="https://www.instagram.com/inegi_informa/">Instagram</a>
         
         </div>
-       
+        
         <div class="footer_menu--interes">
             <h2>Sitios de interés</h2>            
             <a href="https://www.snieg.mx/">SNIEG</a>
@@ -113,31 +113,26 @@
         x.style.display = "none";
         /* if (x.style.display === "none") { */
         
-   /*  } else {
+    /*  } else {
         x.style.display = "none";
     } */
         document.addEventListener("DOMContentLoaded", function() {
             previsual = document.getElementById('previsual__imagen'); 
             pdfViewer = document.getElementById("pdfview"); 
         });
-
         function descargar(){
         
         if(pdfUrlGlobal === null){
         alert('No encontre archivos')
-
-      }else{
-      window.open(pdfUrlGlobal, '_blank');
-      }
-
-      x.style.display = "none";
+    }else{
+    window.open(pdfUrlGlobal, '_blank');
     }
-
+    x.style.display = "none";
+    }
     function obtenerUrl(url){
-      pdfUrlGlobal = url
-      
+    pdfUrlGlobal = url
+    
     }        
-
         function showPDF(pdfURL,url2) { 
             previsual.style.display = 'none';
             setTimeout(() => {
@@ -200,7 +195,7 @@
                     ]
                 },
 
-               /* {
+                /* {
                     anio: "Año 2021",
                     documentos: [
                     {

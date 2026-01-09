@@ -24,10 +24,9 @@
     <a class="boton_regreso" href="../../chiapas.html#documentacion" aria-hidden="true">
         <div class="icono">
             <span class="icon-undo2 svg"></span>            
-         <!--  <div>
+        <!--  <div>
         <button class="boton_descarga"  id="descargar" onclick="descargar()" aria-hidden="true">
-
-              <span class="texto">Descargar</span>
+        <span class="texto">Descargar</span>
         </button> -->
         </div>
         <span class="texto">Regresar</span>
@@ -87,7 +86,6 @@
             <a href="https://www.inegi.org.mx/">INEGI</a>            
             <a href="https://www.snieg.mx/RNIEG/">RNIEG</a>
             <a href="https://www.ceieg.chiapas.gob.mx/home/">CEIEG CHIAPAS</a>
-               
         
         </div>
 
@@ -108,7 +106,7 @@
         x.style.display = "none";
         /* if (x.style.display === "none") { */
         
-   /*  } else {
+    /*  } else {
         x.style.display = "none";
     } */
         document.addEventListener("DOMContentLoaded", function() {
@@ -121,20 +119,19 @@
         if(pdfUrlGlobal === null){
         alert('No encontre archivos')
 
-      }else{
-      window.open(pdfUrlGlobal, '_blank');
-      }
+    }else{
+    window.open(pdfUrlGlobal, '_blank');
+    }
 
-      x.style.display = "none";
+    x.style.display = "none";
     }
 
     function obtenerUrl(url){
-      pdfUrlGlobal = url
-      
+    pdfUrlGlobal = url
+    
     }
 
     function showPDF(pdfURL,url2) { 
-
 
             previsual.style.display = 'none';
             setTimeout(() => {

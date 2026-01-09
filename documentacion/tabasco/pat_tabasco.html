@@ -25,12 +25,12 @@
         <div class="icono">
             <span class="icon-undo2 svg"></span>
         </div>        
-          <span class="texto">Regresar</span>
-         <!--  <div>
+        <span class="texto">Regresar</span>
+        <!--  <div>
             <button class="boton_descarga"  id="descargar" onclick="descargar()" aria-hidden="true">
-             <span class="texto">Descargar</span>
-          </button>
-          </div>-->
+            <span class="texto">Descargar</span>
+        </button>
+        </div>-->
         </a>
 
         <button class="boton_descarga"  id="descargar" onclick="descargar()" aria-hidden="true">
@@ -95,7 +95,7 @@
 
     </footer>
 
- <!-- SCRIPTS -->
+    <!-- SCRIPTS -->
     <!-- jquery -->
     <script src="../../assets/js/jquery.js"></script>
     <!-- PDF Viewer -->
@@ -107,7 +107,7 @@
         x.style.display = "none";
         /* if (x.style.display === "none") { */
         
-   /*  } else {
+    /*  } else {
         x.style.display = "none";
     } */
         document.addEventListener("DOMContentLoaded", function() {
@@ -120,16 +120,16 @@
             if(pdfUrlGlobal === null){
             alert('No encontre archivos')
 
-          }else{
-          window.open(pdfUrlGlobal, '_blank');
-          }
+        }else{
+        window.open(pdfUrlGlobal, '_blank');
+        }
 
-          x.style.display = "none";
+        x.style.display = "none";
         }
 
         function obtenerUrl(url){
-          pdfUrlGlobal = url
-          
+        pdfUrlGlobal = url
+        
         }
 
         function showPDF(pdfURL,url2) { 
@@ -144,7 +144,7 @@
             if (x.style.display === "none") {
                 x.style.display = "block";
             } 
-           
+        
         }
     </script>
     
@@ -194,7 +194,7 @@
                     ]
                 }
 
-               /* {
+            /* {
                     anio: "Año 2017",
                     documentos: [
                     {
@@ -248,9 +248,9 @@
         ];
         itemMenu(config);
     </script>
-      <!-- STYLES -->
-      <link rel="stylesheet" href="../../assets/styles/estilo_act.css">
-      <link rel="stylesheet" href="../../assets/styles/collapsible.css">  
-      <script src="../../assets/js/authentication.js"></script>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../../assets/styles/estilo_act.css">
+    <link rel="stylesheet" href="../../assets/styles/collapsible.css">  
+    <script src="../../assets/js/authentication.js"></script>
 </body>
 </html>
