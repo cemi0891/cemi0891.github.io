@@ -25,12 +25,12 @@
         <div class="icono">
             <span class="icon-undo2 svg"></span>
         </div>        
-          <span class="texto">Regresar</span>
-         <!--  <div>
+        <span class="texto">Regresar</span>
+        <!--  <div>
             <button class="boton_descarga"  id="descargar" onclick="descargar()" aria-hidden="true">
-             <span class="texto">Descargar</span>
-          </button>
-          </div>-->
+            <span class="texto">Descargar</span>
+        </button>
+        </div>-->
         </a>
 
         <button class="boton_descarga"  id="descargar" onclick="descargar()" aria-hidden="true">
@@ -50,13 +50,11 @@
         <div class="previsual__imagen" id="previsual__imagen" style="display: block;">
             <img src="../../img/imagen_selecciona.svg" alt="Imagen de bienvenida" class="previsual__imagen--edit">
         </div>
-        
         <!-- Archivo por2023 -->
         <div class="previsual__archivo" id="pdfview" style="display: none;">
             <object id="tmp" class="previsual__archivo--tamaño" type="application/pdf" data="../../descarga/Actas_des/Chiapas/Actas/07_ACTA_REINSTALACION_CEIEG_2013.pdf"></object>
         </div>
     </div>
-
     <!-- Pie de pagina -->
     <footer aria-hidden="true">
         <div class="waves">
@@ -65,7 +63,6 @@
             <div class="waves" id="wave3"></div>
             <div class="waves" id="wave4"></div>
         </div>
-        
         <div class="footer_menu--redes">
             <h2>Redes sociales</h2>
             <ul class="social__icon">
@@ -79,24 +76,18 @@
                 <a href="http://twitter.com/inegi_informa">Twitter</a>
                 <a href="https://www.youtube.com/user/INEGIInforma">Youtube</a>
                 <a href="https://www.instagram.com/inegi_informa/">Instagram</a>
-        
         </div>
-       
         <div class="footer_menu--interes">
             <h2>Sitios de interés</h2>           
             <a href="https://www.snieg.mx/">SNIEG</a>
             <a href="https://www.inegi.org.mx/">INEGI</a>            
             <a href="https://www.snieg.mx/RNIEG/">RNIEG</a>
             <a href="https://tabasco.gob.mx/ceiegt">CEIEG TABASCO</a>   
-        
         </div>
-
         <label class="depa">Coordinación Estatal Tabasco </label>
         <p class="copy">© Departamento de Comité Estatal</p>
-
     </footer>
-
- <!-- SCRIPTS -->
+<!-- SCRIPTS -->
     <!-- jquery -->
     <script src="../../assets/js/jquery.js"></script>
     <!-- PDF Viewer -->
@@ -108,7 +99,7 @@
         x.style.display = "none";
         /* if (x.style.display === "none") { */
         
-   /*  } else {
+    /*  } else {
         x.style.display = "none";
     } */
         document.addEventListener("DOMContentLoaded", function() {
@@ -120,17 +111,16 @@
         
             if(pdfUrlGlobal === null){
             alert('No encontre archivos')
+        }else{
+        window.open(pdfUrlGlobal, '_blank');
+        }
 
-          }else{
-          window.open(pdfUrlGlobal, '_blank');
-          }
-
-          x.style.display = "none";
+        x.style.display = "none";
         }
 
         function obtenerUrl(url){
-          pdfUrlGlobal = url
-          
+        pdfUrlGlobal = url
+        
         }
 
         function showPDF(pdfURL,url2) { 
@@ -145,7 +135,6 @@
             if (x.style.display === "none") {
                 x.style.display = "block";
             } 
-           
         }
     </script>
     
@@ -212,7 +201,6 @@
                     }
                     ]
                 },
-
                 {
                     anio: "Año 2022",
                     documentos: [
@@ -233,7 +221,6 @@
                     }
                     ]
                 },
-
                 {
                     anio: "Año 2021",
                     documentos: [
@@ -254,7 +241,6 @@
                     }
                     ]
                 },
-                
                 {
                     anio: "Año 2020",
                     documentos: [
@@ -265,7 +251,6 @@
                     }
                     ]
                 },
-                
                 {
                     anio: "Año 2019",
                     documentos: [
@@ -288,7 +273,6 @@
                 }
                 ]
             },
-
             {
                 periodo: "PERIODO 2012-2018",
                 anios: [
@@ -312,7 +296,6 @@
                     }
                     ]
                 },
-
                 {
                     anio: "Año 2017",
                     documentos: [
@@ -338,7 +321,6 @@
                     }
                     ]
                 },
-
                 {
                     anio: "Año 2016",
                     documentos: [
@@ -360,7 +342,7 @@
                     ]
                 }
                 
-              /*  {
+                /*  {
                     anio: "Año 2015",
                     documentos: [
                     {
@@ -369,7 +351,6 @@
                     }
                     ]
                 },
-                
                 {
                     anio: "Año 2014",
                     documentos: [
@@ -379,7 +360,6 @@
                     }
                     ]
                 },
-
                 {
                     anio: "Año 2013",
                     documentos: [
@@ -394,7 +374,6 @@
         ];
         itemMenu(config);
     </script>
-
     <!-- STYLES -->
     <link rel="stylesheet" href="../../assets/styles/estilo_act.css">
     <link rel="stylesheet" href="../../assets/styles/collapsible.css">
