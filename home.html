@@ -1,136 +1,183 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRS</title>
+    <title>Dirección Regional Sur</title>
     <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/styles/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header>  
-        <nav class="nav container">
-            <ul class="nav_link nav_link--menu">
-                <li class="nav_items">
-                    <a href="#punto1" class="nav_links">SNIEG</a>  
-                </li> 
-                <li class="nav_items">
-                    <a href="#estados" class="nav_links">Entidades</a>  
-                </li>
-                <li class="nav_items">
-                    <a href="#contac" class="nav_links">Contacto</a>  
-                </li>
-            </ul>
+    <header>
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">
+                    <img src="img/logoinegibco.png" alt="INEGI Logo">
+                    <span> DRS</span>
+                </a>
+                <ul class="nav_link">
+                    <li class="nav_items">
+                        <a href="#punto1" class="nav_links">SNIEG</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#estados" class="nav_links">Entidades</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#contac" class="nav_links">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
-        <section class="textos-header">
-            <h1>COMITÉS ESTATALES DE INFORMACIÓN ESTADÍSTICA Y GEOGRÁFICA</h1>
-            <h2>Dirección Regional Sur</h2>
-        </section>
-        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-            <path d="M0.00,49.98 C149.99,150.00 349.20,-55.98 500.00,90.98 L500.00,150.00 L0.00,150.00 Z" 
-            style="stroke: none; fill: #fff;"></path></svg></div>
-
-    </header>
-    <main>
-        <section class="contenedor sobre-nosotros" id="punto1">
-            <h2 class="titulo">Sistema Nacional de Información Estadística y Geográfica</h2>
-            <div class="contenedor-sobre-nosotros">
-                <img src="img/snieg.JPG" alt="" class="imagen-about-us"> 
-                <div class="contenido-textos">
-                    <h3>Acerca del SNIEG</h3>
-                    <p>El Sistema Nacional de Información Estadística y Geográfica (SNIEG), es el conjunto de Unidades del Estado (UE) organizadas a través de los Subsistemas, coordinadas por el Instituto y articuladas mediante la Red Nacional de Información, con el propósito de producir y difundir la Información de Interés Nacional.</p>
-                    <h3>Finalidad</h3>
-                    <p>El Sistema Nacional de Información Estadística y Geográfica tiene como finalidad suministrar a la sociedad y al Estado información de calidad, pertinente, veraz y oportuna, con los siguientes principios rectores: accesibilidad, transparencia, objetividad y transparencia.</p>                    
-                    <h3>Objetivos</h3>
-                    <p> - Producir Información. 
-                        - Difundir oportunamente la información a través de mecanismos que faciliten su consulta.
-                        - Promover el conocimiento y uso de la información.                        
-                        - Conservar la información.
-                    </p>
-                </div>
-            </div>            
-        </section>
-        <section class="portafolio">
-            <div class="contenedor" id="estados">
-                <h2 class="titulo">Entidades</h2>
-                
-                <div class="galeria-port">
-                    <div class="imagen-port">
-                        <a href=""></a><img src="img/Chiapas.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/ico.png" alt="">
-                            <p>Chiapas</p>
-                            <a href="chiapas.html"><b>ACCEDER</b></a>                            
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/Oaxaca.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/ico.png" alt="">
-                            <p>Oaxaca</p>
-                            <a href="oaxaca.html"><b>ACCEDER</b></a>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/tabasco.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/ico.png" alt="">
-                            <p>Tabasco</p>
-                            <a href="tabasco.html"><b>ACCEDER</b></a>
-                        </div>
-                    </div>                    
-                </div>                
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>COMITÉS ESTATALES DE INFORMACIÓN ESTADÍSTICA Y GEOGRÁFICA</h1>
+                <h2>Dirección Regional Sur</h2>
             </div>
         </section>
-        <section class="about-servicies" id="contac" >
-            <div class="contenedor">
-                <h2 class="titulo">Dirección de Promoción y Concertación.</h2>
-                <div class="servicio-cont">
-                    <div class="servicio-ind">
-                        <img src="" alt="">
-                        <h4>Efraín Reyes Molinedo</h4>
-                        <p>Director de Promoción y Concertación.</p>
-                        <address>efrain.reyes@inegi.org.mx</address>
+
+        <div class="wave-container">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-55.98 500.00,90.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #f9fafb;"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <!-- SNIEG Section -->
+        <section class="section-container" id="punto1">
+            <h2 class="section-title">Sistema Nacional de Información Estadística y Geográfica</h2>
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <img src="img/snieg.JPG" alt="SNIEG Visual" class="about-image">
+                </div>
+                <div class="about-content">
+                    <div class="about-card">
+                        <h3>Acerca del SNIEG</h3>
+                        <p>El Sistema Nacional de Información Estadística y Geográfica (SNIEG), es el conjunto de
+                            Unidades del Estado (UE) organizadas a través de los Subsistemas, coordinadas por el
+                            Instituto y articuladas mediante la Red Nacional de Información, con el propósito de
+                            producir y difundir la Información de Interés Nacional.</p>
                     </div>
-                    <div class="servicio-ind">
-                        <img src="" alt="">
-                        <h4>Mireya Araley Carrera Carrasco</h4>
-                        <p>Subdirectora de Promoción y Concertación. </p>
-                        <address>mireya.carrera@inegi.org.mx</address>
+                    <div class="about-card">
+                        <h3>Finalidad</h3>
+                        <p>El Sistema Nacional de Información Estadística y Geográfica tiene como finalidad suministrar
+                            a la sociedad y al Estado información de calidad, pertinente, veraz y oportuna, con los
+                            siguientes principios rectores: accesibilidad, transparencia, objetividad e independencia.
+                        </p>
                     </div>
-                    <div class="servicio-ind">
-                        <img src="" alt="">
-                        <h4>Lorena Ivonne Cruz Palacios</h4>
-                        <p>Jefa de Departamento Comités Estatales.</p>
-                        <address>lorena.cruz@inegi.org.mx</address>                        
+                    <div class="about-card">
+                        <h3>Objetivos</h3>
+                        <ul>
+                            <li>Producir Información.</li>
+                            <li>Difundir oportunamente la información a través de mecanismos que faciliten su consulta.
+                            </li>
+                            <li>Promover el conocimiento y uso de la información.</li>
+                            <li>Conservar la información.</li>
+                        </ul>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Entidades Section -->
+        <section class="section-dark" id="estados">
+            <div class="section-container">
+                <h2 class="section-title text-white">Entidades</h2>
+
+                <div class="gallery-grid">
+                    <a href="chiapas.html" class="gallery-item">
+                        <img src="img/Chiapas.jpg" alt="Chiapas">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon">📍</span>
+                            <h3>Chiapas</h3>
+                            <span class="gallery-btn">Acceder</span>
+                        </div>
+                    </a>
+
+                    <a href="oaxaca.html" class="gallery-item">
+                        <img src="img/Oaxaca.jpg" alt="Oaxaca">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon">📍</span>
+                            <h3>Oaxaca</h3>
+                            <span class="gallery-btn">Acceder</span>
+                        </div>
+                    </a>
+
+                    <a href="tabasco.html" class="gallery-item">
+                        <img src="img/tabasco.jpg" alt="Tabasco">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon">📍</span>
+                            <h3>Tabasco</h3>
+                            <span class="gallery-btn">Acceder</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section-container" id="contac">
+            <h2 class="section-title">Dirección de Promoción y Concertación</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">E</div>
+                    <h4>Efraín Reyes Molinedo</h4>
+                    <p class="role">Director de Promoción y Concertación</p>
+                    <a href="mailto:efrain.reyes@inegi.org.mx" class="email">efrain.reyes@inegi.org.mx</a>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">M</div>
+                    <h4>Mireya Araley Carrera Carrasco</h4>
+                    <p class="role">Subdirectora de Promoción y Concertación</p>
+                    <a href="mailto:mireya.carrera@inegi.org.mx" class="email">mireya.carrera@inegi.org.mx</a>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">L</div>
+                    <h4>Lorena Ivonne Cruz Palacios</h4>
+                    <p class="role">Jefa de Departamento Comités Estatales</p>
+                    <a href="mailto:lorena.cruz@inegi.org.mx" class="email">lorena.cruz@inegi.org.mx</a>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
-        <img src="img/logoinegibco.png" alt="Logo Inegi" class="logo_inegi">
-        <h2 class="titulo">Contacto</h2>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <h4>Teléfono</h4>
-                <p>Tel:9515124810, Ext:324810</p>
-                <p>Tel:9515124807, Ext:324807</p>
-            </div>            
-            <div class="content-foo">
-                <h4>Lugar</h4>
-                <p>Dirección Regional Sur;</p>
-                <p>Emiliano Zapata 316, Reforma 3er. Nivel</p>
-                <p>Oaxaca de Juárez, Oax.</p>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="img/logoinegibco.png" alt="Logo Inegi" class="footer-logo">
+                <p>Dirección Regional Sur</p>
+            </div>
+
+            <div class="footer-info">
+                <div class="footer-column">
+                    <h4>Contacto Telefónico</h4>
+                    <p>Tel: 951 512 4810, Ext: 324810</p>
+                    <p>Tel: 951 512 4807, Ext: 324807</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Ubicación</h4>
+                    <p>Emiliano Zapata 316, Reforma 3er. Nivel</p>
+                    <p>Oaxaca de Juárez, Oax.</p>
+                </div>
             </div>
         </div>
-        <h2 class="Titulo-final">&copy; Dirección de Promoción y Concertación DRS | Derechos Reservados    . </h2>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dirección de Promoción y Concertación DRS | Derechos Reservados.</p>
+        </div>
     </footer>
 
     <script src="./assets/js/authentication.js"></script>
 </body>
+
 </html>
