@@ -1,0 +1,483 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronograma de Actividades - Proyecto</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <!-- Link to our external CSS -->
+    <link rel="stylesheet" href="cronograma.css">
+</head>
+
+<body>
+    <!-- Background aesthetic layer -->
+    <div class="bg-gradient"></div>
+
+    <!-- Fixed Glassmorphism Header containing Logos and Title -->
+    <header class="main-header">
+        <img src="../img/logoinegibco.png" alt="Logo Izquierdo" class="top-img-left">
+        <div class="header-titles">
+            <h1>Primera Sesión Ordinaria</h1>
+            <h3>Comité Estatal Oaxaca.</h3>
+        </div>
+        <img src="../img/LOGO-SNIEG-ENCABEZADO.png" alt="Logo Derecho" class="top-img-right">
+
+        <ul class="nav_link">
+            <li class="nav_items">
+                <a href="../oaxaca.html" class="nav_links">REGRESAR</a>
+            </li>
+        </ul>
+    </header>
+
+    <main class="timeline">
+        <!-- Activity 1 -->
+        <div class="timeline-item left">
+            <div class="content">
+                <span class="step-number">01</span>
+                <div class="date-container">
+                    <span class="date">06 Mar 2026</span>
+                    <span class="countdown" data-date="2026-03-06"></span>
+                </div>
+                <h2>Solicitud de la DSNIEGAE a la DR</h2>
+                <p>Solicitud de la confirmación de la sesión y el envío de la información preliminar.
+                </p>
+                <h5>Correo electronico</h>
+                    <ul class="process-checklist locked">
+                        <li><label><input type="checkbox" disabled> Correo electronico</label> <a
+                                href="https://365inegi-my.sharepoint.com/:b:/g/personal/cristian_maraver_inegi_org_mx/IQDdN8umtXE2SoKXwAsyQtwZAQSM_x0YEEdhe3ChJBq6AJQ?e=Bx9r5L/"
+                                target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+
+                    </ul>
+                    <div class="checklist-actions">
+                        <button class="unlock-btn" onclick="unlockChecklist(this)">✎ Modificar</button>
+                        <button class="save-btn hidden" onclick="saveChecklist(this)">💾 Guardar</button>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Activity 2 -->
+        <div class="timeline-item right">
+            <div class="content">
+                <span class="step-number">02</span>
+                <div class="date-container">
+                    <span class="date">09 Mar 2026</span>
+                    <span class="countdown" data-date="2026-03-09"></span>
+                </div>
+                <h2>Confirmación de fecha</h2>
+                <p>La DR confirma la fecha de la sesión y envía a la DSNIEGAE la información preliminar.</p>
+                <h6>Documentos preliminares</h6>
+                <ul class="process-checklist locked">
+                    <li><label><input type="checkbox" disabled> Actividad 1</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 2</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 3</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 4</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 5</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                </ul>
+                <div class="checklist-actions">
+                    <button class="unlock-btn" onclick="unlockChecklist(this)">✎ Modificar</button>
+                    <button class="save-btn hidden" onclick="saveChecklist(this)">💾 Guardar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity 3 -->
+        <div class="timeline-item left">
+            <div class="content">
+                <span class="step-number">03</span>
+                <div class="date-container">
+                    <span class="date">10 Mar 2026</span>
+                    <span class="countdown" data-date="2026-03-10"></span>
+                </div>
+                <h2>Notificaciones</h2>
+                <p>La DGOR notifica a la DGCSNIEG la fecha prevista para la sesión del CEIEG y deposita en el Sitio la
+                    información preliminar.</p>
+                <h6>Documentos preliminares</h6>
+                <ul class="process-checklist locked">
+                    <li><label><input type="checkbox" disabled> Actividad 1</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 2</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 3</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 4</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 5</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                </ul>
+                <div class="checklist-actions">
+                    <button class="unlock-btn" onclick="unlockChecklist(this)">✎ Modificar</button>
+                    <button class="save-btn hidden" onclick="saveChecklist(this)">💾 Guardar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity 4 -->
+        <div class="timeline-item right">
+            <div class="content">
+                <span class="step-number">04</span>
+                <div class="date-container">
+                    <span class="date">10 Mar 2026</span>
+                    <span class="countdown" data-date="2026-03-10"></span>
+                </div>
+                <h2>Comuicaión</h2>
+                <p>La DGCSNIEG comunica a las presidencias de los CE la fecha prevista para la sesión del CEIEG, con
+                    copia a DGOR.</p>
+                <h6>Correo electronico</h6>
+                <ul class="process-checklist locked">
+                    <li><label><input type="checkbox" disabled> Actividad 1</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 2</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 3</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 4</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 5</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                </ul>
+                <div class="checklist-actions">
+                    <button class="unlock-btn" onclick="unlockChecklist(this)">✎ Modificar</button>
+                    <button class="save-btn hidden" onclick="saveChecklist(this)">💾 Guardar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity 5 -->
+        <div class="timeline-item left">
+            <div class="content">
+                <span class="step-number">05</span>
+                <div class="date-container">
+                    <span class="date">13 Mar 2026</span>
+                    <span class="countdown" data-date="2026-03-13"></span>
+                </div>
+                <h2>Identificación de temas</h2>
+                <p>Se identifican temas de relevancia para el SNI</p>
+                <ul class="process-checklist locked">
+                    <li><label><input type="checkbox" disabled> Actividad 1</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 2</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 3</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 4</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 5</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                </ul>
+                <div class="checklist-actions">
+                    <button class="unlock-btn" onclick="unlockChecklist(this)">✎ Modificar</button>
+                    <button class="save-btn hidden" onclick="saveChecklist(this)">💾 Guardar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity 6 -->
+        <div class="timeline-item right">
+            <div class="content">
+                <span class="step-number">06</span>
+                <div class="date-container">
+                    <span class="date">17 Mar 2026</span>
+                    <span class="countdown" data-date="2026-03-17"></span>
+                </div>
+                <h2>Designación</h2>
+                <p>La DSNIEGAE notifica a la DR la persona designada por el CE para participar en la
+                    sesión.</p>
+                <h6>Correo electronico</h6>
+                <ul class="process-checklist locked">
+                    <li><label><input type="checkbox" disabled> Actividad 1</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 2</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 3</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 4</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 5</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                </ul>
+                <div class="checklist-actions">
+                    <button class="unlock-btn" onclick="unlockChecklist(this)">✎ Modificar</button>
+                    <button class="save-btn hidden" onclick="saveChecklist(this)">💾 Guardar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity 7 -->
+        <div class="timeline-item left">
+            <div class="content">
+                <span class="step-number">07</span>
+                <div class="date-container">
+                    <span class="date">17 Mar 2026</span>
+                    <span class="countdown" data-date="2026-03-17"></span>
+                </div>
+                <h2>Invitación</h2>
+                <p>La Coordinación Estatal gestione la invitación de la persona designada a la sesión.</p>
+                <h6>Invitación a sesión CEIEG</h6>
+                <ul class="process-checklist locked">
+                    <li><label><input type="checkbox" disabled> Actividad 1</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 2</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 3</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 4</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 5</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                </ul>
+                <div class="checklist-actions">
+                    <button class="unlock-btn" onclick="unlockChecklist(this)">✎ Modificar</button>
+                    <button class="save-btn hidden" onclick="saveChecklist(this)">💾 Guardar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity 8 -->
+        <div class="timeline-item right">
+            <div class="content">
+                <span class="step-number">08</span>
+                <div class="date-container">
+                    <span class="date">18 Mar 2026</span>
+                    <span class="countdown" data-date="2026-03-18"></span>
+                </div>
+                <h2>Envío de convocatoria</h2>
+                <p>La presidencia del Comité envía la convocatoria de la sesión.</p>
+                <h6>Convocatoria de la sesión</h6>
+                <ul class="process-checklist locked">
+                    <li><label><input type="checkbox" disabled> Actividad 1</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 2</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 3</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 4</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 5</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                </ul>
+                <div class="checklist-actions">
+                    <button class="unlock-btn" onclick="unlockChecklist(this)">✎ Modificar</button>
+                    <button class="save-btn hidden" onclick="saveChecklist(this)">💾 Guardar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity 9 -->
+        <div class="timeline-item left">
+            <div class="content">
+                <span class="step-number">09</span>
+                <div class="date-container">
+                    <span class="date">25 Mar 2026</span>
+                    <span class="countdown" data-date="2026-03-25"></span>
+                </div>
+                <h1>Realización de Sesión</h1>
+                <p>La presidencia del CE o la persona designada participa en la sesión del CEIEG.</p>
+                <ul class="process-checklist locked">
+                    <li><label><input type="checkbox" disabled> Actividad 1</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 2</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 3</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 4</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 5</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                </ul>
+                <div class="checklist-actions">
+                    <button class="unlock-btn" onclick="unlockChecklist(this)">✎ Modificar</button>
+                    <button class="save-btn hidden" onclick="saveChecklist(this)">💾 Guardar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity 10 -->
+        <div class="timeline-item right">
+            <div class="content">
+                <span class="step-number">10</span>
+                <div class="date-container">
+                    <span class="date">30 Mar 2026</span>
+                    <span class="countdown" data-date="2026-03-30"></span>
+                </div>
+                <h2>Remisión de acuerdos</h2>
+                <p>La DR remite a la DSNIEGAE los acuerdos establecidos entre el CEIEG y la presidencia del CE.</p>
+                <h6>Correo electronico</h6>
+                <ul class="process-checklist locked">
+                    <li><label><input type="checkbox" disabled> Actividad 1</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 2</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 3</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 4</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                    <li><label><input type="checkbox" disabled> Actividad 5</label> <a href="https://www.snieg.mx/"
+                            target="_blank" class="checklist-icon" title="Ver información">🌐</a></li>
+                </ul>
+                <div class="checklist-actions">
+                    <button class="unlock-btn" onclick="unlockChecklist(this)">✎ Modificar</button>
+                    <button class="save-btn hidden" onclick="saveChecklist(this)">💾 Guardar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contacto">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="../img/logo-inegi.png" alt="Logo Inegi" class="footer-logo">
+                <p>Dirección Regional Sur - Oaxaca</p>
+            </div>
+
+            <div class="footer-info">
+                <div class="footer-column">
+                    <h4>Departamento de Comité Estatal</h4>
+                    <p>Jefe de Departamento:</p>
+                    <p>Daniel Sánchez Gutiérrez</p>
+                    <p style="margin-top: 10px;">Tel: 951 512 4800, Ext: 2674</p>
+                    <p><a href="mailto:daniel.sanchez@inegi.org.mx"
+                            style="color: #1956be; text-decoration: none;">daniel.sanchez@inegi.org.mx</a></p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Ubicación</h4>
+                    <p>Coordinación Estatal Oaxaca</p>
+                    <p>Emiliano Zapata 316, Col. Reforma Planta Baja</p>
+                    <p>Oaxaca de Juárez, Oax.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dirección de Promoción y Concertación DRS | Derechos Reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript para animaciones y conteo de días -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Lógica para el Conteo de Días
+            const countdownElements = document.querySelectorAll('.countdown');
+            // Obtener la fecha actual a las 00:00:00 para hacer la comparación justa por días
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            countdownElements.forEach(el => {
+                const targetDateString = el.getAttribute('data-date');
+                if (!targetDateString) return;
+
+                // Forzamos la zona local dividiendo la fecha
+                const [year, month, day] = targetDateString.split('-');
+                const targetDate = new Date(year, month - 1, day);
+                targetDate.setHours(0, 0, 0, 0);
+
+                const diffTime = targetDate.getTime() - today.getTime();
+                const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+                if (diffDays > 0) {
+                    el.textContent = `Faltan ${diffDays} día${diffDays === 1 ? '' : 's'}`;
+                } else if (diffDays === 0) {
+                    el.textContent = '¡Hoy es el día!';
+                    el.classList.add('today');
+                } else {
+                    el.textContent = `Hace ${Math.abs(diffDays)} día${Math.abs(diffDays) === 1 ? '' : 's'}`;
+                    el.classList.add('past');
+                }
+            });
+
+            // 2. Observer para arrancar animación al hacer Scroll
+            const timelineItems = document.querySelectorAll('.timeline-item');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15 // Dispara cuando el 15% del elemento es visible
+            };
+
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                    } else {
+                        entry.target.classList.remove('in-view');
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            timelineItems.forEach(item => {
+                observer.observe(item);
+            });
+
+            // 5. Load Checklist states on page load
+            const loadChecklists = () => {
+                timelineItems.forEach((item, index) => {
+                    const savedState = localStorage.getItem(`checklist_${index}`);
+                    if (savedState) {
+                        const state = JSON.parse(savedState);
+                        const checkboxes = item.querySelectorAll(".process-checklist input[type='checkbox']");
+                        checkboxes.forEach((cb, i) => {
+                            if (state[i]) cb.checked = true;
+                        });
+                    }
+                });
+            };
+
+            loadChecklists();
+        });
+
+        // 3. Logic for Unlocking Checklists (Global scope para ser llamado por onclick)
+        window.unlockChecklist = function (btn) {
+            const password = prompt("Ingrese la clave para modificar el checklist:");
+            if (password === "inegi2026") {
+                const actionsDiv = btn.parentElement;
+                const checklist = actionsDiv.previousElementSibling;
+                checklist.classList.remove("locked");
+                const checkboxes = checklist.querySelectorAll("input[type='checkbox']");
+                checkboxes.forEach(cb => cb.removeAttribute("disabled"));
+                btn.style.display = "none";
+                actionsDiv.querySelector(".save-btn").classList.remove("hidden");
+            } else {
+                alert("Clave incorrecta. No se puede modificar el checklist.");
+            }
+        };
+
+        // 4. Logic for Saving Checklists (Global scope)
+        window.saveChecklist = function (btn) {
+            const actionsDiv = btn.parentElement;
+            const checklist = actionsDiv.previousElementSibling;
+            const checkboxes = checklist.querySelectorAll("input[type='checkbox']");
+
+            // Get a unique ID for this checklist based on its parent timeline-item index
+            const timelineItems = document.querySelectorAll(".timeline-item");
+            const itemDiv = checklist.closest(".timeline-item");
+            const index = Array.from(timelineItems).indexOf(itemDiv);
+
+            const state = [];
+            checkboxes.forEach((cb, i) => {
+                state.push(cb.checked);
+                cb.setAttribute("disabled", "true"); // Lock again after saving
+            });
+
+            localStorage.setItem(`checklist_${index}`, JSON.stringify(state));
+            checklist.classList.add("locked");
+
+            // Toggle buttons back
+            btn.classList.add("hidden");
+            actionsDiv.querySelector(".unlock-btn").style.display = "flex";
+
+            alert("Cambios guardados correctamente.");
+        };
+    </script>
+</body>
+
+</html>
