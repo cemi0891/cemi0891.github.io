@@ -19,7 +19,7 @@
             <div class="nav-container">
                 <a href="#" class="nav-logo">
                     <img src="img/logoinegibco.png" alt="INEGI Logo">
-                    <span> DRS .</span>
+                    <span> DRS</span>
                 </a>
                 <ul class="nav_link">
                     <li class="nav_items">
@@ -30,7 +30,7 @@
                     </li>
                     <li class="nav_items">
                         <a href="#contac" class="nav_links">Contacto</a>
-                    <li class="nav_items"><a href="material.html" class="nav_links">Material_descarga</a></li>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -150,7 +150,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="contacto">
         <div class="footer-container">
             <div class="footer-brand">
                 <img src="img/logoinegibco.png" alt="Logo Inegi" class="footer-logo">
@@ -175,54 +175,6 @@
             <p>&copy; 2026 Dirección de Promoción y Concertación DRS | Derechos Reservados.</p>
         </div>
     </footer>
-
-    <!-- Dynamic 3D Floating Banner -->
-    <div class="floating-banner" id="promo-banner">
-        <div class="banner-inner">
-            <div class="banner-slide active">
-                <div class="banner-content">
-                    <span class="banner-icon">🚀</span>
-                    <div class="banner-text">
-                        <strong>Primera Sesión <span style="font-weight: 800;">OAXACA</span></strong>
-                        <span>25 de marzo de 2026</span>
-                    </div>
-                </div>
-            </div>
-            <div class="banner-slide">
-                <div class="banner-content">
-                    <span class="banner-icon">📊</span>
-                    <div class="banner-text">
-                        <strong>Primera Sesión <span style="font-weight: 800;">CHIAPAS</span></strong>
-                        <span>20 de marzo de 2026</span>
-                    </div>
-                </div>
-            </div>
-            <div class="banner-slide">
-                <div class="banner-content">
-                    <span class="banner-icon">🌍</span>
-                    <div class="banner-text">
-                        <strong>Primera Sesión <span style="font-weight: 800;">TABASCO</span></strong>
-                        <span>12 de marzo de 2026</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const slides = document.querySelectorAll('.banner-slide');
-            let currentSlide = 0;
-
-            function rotateBanner() {
-                slides[currentSlide].classList.remove('active');
-                currentSlide = (currentSlide + 1) % slides.length;
-                slides[currentSlide].classList.add('active');
-            }
-
-            setInterval(rotateBanner, 4000);
-        });
-    </script>
 
     <script src="./assets/js/authentication.js"></script>
 </body>

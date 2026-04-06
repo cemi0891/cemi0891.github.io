@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página en Construcción</title>
+    <!-- Modern typography via Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/contraseñas.css">
+    <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+    <style>
+        .construction-content {
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        .construction-icon {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        .construction-title {
+            font-size: 1.5rem;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .construction-message {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <img src="img/snieg1.JPG" class="avatar" alt="Avatar SNIEG">
+                <h1>Comités Estatales</h1>
+                <h2>Dirección Regional Sur</h2>
+            </div>
+
+            <div class="construction-content">
+                <div class="construction-icon">🚧</div>
+                <h3 class="construction-title">Página en Construcción</h3>
+                <p class="construction-message">Estamos trabajando en esta sección para brindarte una mejor experiencia.
+                    Por favor, vuelve más tarde.</p>
+
+                <div class="form-actions">
+                    <button type="button" class="btn-primary" onclick="window.location.href='home.html'">Volver
+                        Atrás</button>
+                </div>
+            </div>
+
+            <div class="login-footer">
+                <img src="img/logo-inegi.png" alt="INEGI" class="footer-logo">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
