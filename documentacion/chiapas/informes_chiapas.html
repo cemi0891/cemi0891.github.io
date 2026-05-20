@@ -6,150 +6,309 @@
     <link rel="icon" type="text/css" href="../../img/Imagen-icono_programa.ico">
     <link rel="stylesheet" href="../../assets/styles/icons.css">
 
-    <!-- Estilos -->
+    <!-- Old Icons / PDF layout / Component Styles -->
     <link rel="stylesheet" href="../../assets/styles/estilo_act.css">
     <link rel="stylesheet" href="../../assets/styles/collapsible.css">
 
+    <!-- Modern Styles (from Chiapas.html) -->
+    <link rel="stylesheet" href="../../assets/styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <title>informe_chiapas</title>    
+
+    <style>
+        /* Overrides to mesh old styles with modern header/footer and Chiapas colors */
+        body {
+            margin-bottom: 0;
+            background-color: var(--bg-color);
+        }
+
+        .modern-header {
+            position: relative;
+            height: 120px;
+            background: linear-gradient(to right, rgba(1, 3, 100, 0.95), rgba(30, 58, 138, 0.85));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 60px;
+        }
+
+        .page-actions {
+            display: flex;
+            gap: 15px;
+            padding: 30px 20px 10px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .action-btn {
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .action-btn:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .viewer-container {
+            position: relative;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            max-width: 1400px;
+            margin: 0 auto 60px auto;
+        }
+
+        .viewer-menu {
+            flex: 1;
+            min-width: 320px;
+            max-width: 400px;
+            background: white;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .viewer-menu-title {
+            background: linear-gradient(to right, rgba(1, 3, 100, 1), rgba(30, 58, 138, 1));
+            color: white;
+            padding: 18px;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .viewer-content {
+            flex: 2;
+            min-width: 300px;
+            background: white;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
+            padding: 20px;
+            min-height: 700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        object {
+            width: 100%;
+            height: 700px;
+            border-radius: 8px;
+        }
+
+        /* Reset old absolute positioning from estilo_act.css */
+        .menu__archivos {
+            position: relative !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            box-shadow: none !important;
+            border-radius: 0 !important;
+            height: auto !important;
+            padding-bottom: 20px;
+        }
+
+        .menu__archivos--titulo {
+            display: none;
+        }
+
+        /* Hide the old title we replaced it */
+        .previsual {
+            position: relative !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            display: flex !important;
+            justify-content: center !important;
+        }
+
+        .previsual__archivo {
+            position: relative !important;
+            top: 0 !important;
+            width: 100% !important;
+        }
+
+        .previsual .previsual__archivo--tamaño {
+            width: 100% !important;
+        }
+
+        .previsual__imagen {
+            position: relative !important;
+            top: auto !important;
+            right: auto !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Override footer forced positioning from estilo_act.css */
+        footer#contacto {
+            position: relative !important;
+            min-height: auto !important;
+            height: auto !important;
+            display: block !important;
+            padding: 80px 0 0 0 !important;
+        }
+        footer#contacto p {
+            position: static !important;
+            bottom: auto !important;
+            right: auto !important;
+            color: #9ca3af !important;
+            margin-top: 0 !important;
+            font-size: 14px !important;
+        }
+        footer#contacto .footer-bottom p {
+            color: #6b7280 !important;
+            margin-bottom: 0 !important;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <img src="../../img/Encabezado.png" alt="Encabezado" class="img-encabezado">
-            <hr class="linea__navbar-gris">
-            <hr class="linea__navbar-verde">
-            <hr class="linea__navbar-azul">
-            <hr class="linea__navbar-amarrillo">
-            <img src="../../img/LOGO-SNIEG-ENCABEZADO.png" alt="Logo SNIEG" class="logo__navbar--SNIEG">            
-            <img src="../../img/logo-inegi.png" alt="Logo INEGI" class="logo__navbar--INEGI">
+    <!-- Navbar from Chiapas.html -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../../chiapas.html" class="nav-logo">
+                <img src="../../img/logoinegibco.png" alt="INEGI Logo">
+                <span>Chiapas</span>
+            </a>
+            <ul class="nav_link">
+                <li class="nav_items"><a href="../../home.html#estados" class="nav_links">Entidades</a></li>
+                <li class="nav_items"><a href="../../chiapas.html#snieg" class="nav_links">CEIEG</a></li>
+                <li class="nav_items"><a href="../../chiapas.html#documentacion" class="nav_links">Documentación</a>
+                </li>
+                <li class="nav_items"><a href="../../chiapas.html#contacto" class="nav_links">Contacto</a></li>
+                <li class="nav_items"><a href="../../Sesiones/1_sesion_chi_26.html" class="nav_links">Sesiones</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
+    <div class="modern-header"></div>
 
-    <a class="boton_regreso" href="../../chiapas.html#documentacion" aria-hidden="true">
-        <div class="icono">
-            <span class="icon-undo2 svg"></span>
-        </div>        
-        <span class="texto">Regresar</span>
-        <!--  <div>
-            <button class="boton_descarga"  id="descargar" onclick="descargar()" aria-hidden="true">
-            <span class="texto">Descargar</span>
-        </button>
-        </div>-->
+    <div class="page-actions">
+        <a class="action-btn" href="../../chiapas.html#documentacion" aria-hidden="true">
+            <span class="icon-undo2 svg"></span> <span class="texto">Regresar</span>
         </a>
 
-    <button class="boton_descarga"  id="descargar" onclick="descargar()" aria-hidden="true">
-        <div>        
-            <span class="texto"> Ver documento </span>
-            <span class="texto"> completo </span>
-        </div>
-    </button>
-
-    <!-- Menu de contenido -->
-    <div class="menu__archivos" >
-        <h2 class="menu__archivos--titulo" style="font-size: 19px;">Informes Semestrales Chiapas<span class="icon-file-pdf icon__pdf" style="font-size: 20px"></span></h2>
-        <ul class="dropdown" id="menu" style="padding: 16px;"> </ul> 
+        <button class="action-btn" id="descargar" onclick="descargar()" aria-hidden="true"
+            style="background: var(--secondary); display: none;">
+            <span class="icon-download"></span> <span class="texto">Ver documento completo</span>
+        </button>
     </div>
 
-    <!-- PDF visor -->
-    <div class="previsual" aria-hidden="true">
-        <div class="previsual__imagen" id="previsual__imagen" style="display: block;">
-            <img src="../../img/imagen_selecciona.svg" alt="Imagen de bienvenida" class="previsual__imagen--edit">
+    <div class="viewer-container">
+        <!-- Menu de contenido -->
+        <div class="viewer-menu">
+            <div class="viewer-menu-title">
+                Informes Semestrales Chiapas <span class="icon-file-pdf icon__pdf" style="margin-left: 8px;"></span>
+            </div>
+            <div class="menu__archivos">
+                <ul class="dropdown" id="menu" style="padding: 1px;"> </ul>
+            </div>
         </div>
-        
-        <!-- Archivo por2023 -->
-        <div class="previsual__archivo" id="pdfview" style="display: none;">
-            <object id="tmp" class="previsual__archivo--tamaño" type="application/pdf" data="../../descarga/Actas_des/Chiapas/Actas/07_ACTA_REINSTALACION_CEIEG_2013.pdf"></object>
+
+        <!-- PDF visor -->
+        <div class="viewer-content">
+            <div class="previsual" aria-hidden="true">
+                <div class="previsual__imagen" id="previsual__imagen" style="display: flex;">
+                    <img src="../../img/imagen_selecciona.svg" alt="Imagen de bienvenida"
+                        style="max-width: 250px; opacity: 0.6;">
+                </div>
+
+                <div class="previsual__archivo" id="pdfview" style="display: none;">
+                    <object id="tmp" class="previsual__archivo--tamaño" type="application/pdf" data=""></object>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Pie de pagina -->
-    <footer aria-hidden="true">
-        <div class="waves">
-            <div class="waves" id="wave1"></div>
-            <div class="waves" id="wave2"></div>
-            <div class="waves" id="wave3"></div>
-            <div class="waves" id="wave4"></div>
-        </div>
-        
-        <div class="footer_menu--redes">
-            <h2>Redes sociales</h2>
-            <ul class="social__icon">
-                <li><a href="http://www.facebook.com/pages/inegi-informa/180299958681029" class="footer_a"><span class="icon-facebook"></span></a></li>
-                <li><a href="http://twitter.com/inegi_informa" class="footer_a"><span class="icon-twitter"></span></a></li>
-                <li><a href="https://www.youtube.com/user/INEGIInforma" class="footer_a"><span class="icon-youtube"></span></a></li>
-                <li><a href="https://www.instagram.com/inegi_informa/" class="footer_a"><span class="icon-instagram"></span></a></li>
-            </ul>
-            <img src="../../img/logoinegibco.png" alt="Logo Inegi" class="logo_inegi">
-                <a href="http://www.facebook.com/pages/inegi-informa/180299958681029">Facebook</a>
-                <a href="http://twitter.com/inegi_informa">Twitter</a>
-                <a href="https://www.youtube.com/user/INEGIInforma">Youtube</a>
-                <a href="https://www.instagram.com/inegi_informa/">Instagram</a>
-        
-        </div>
-        <div class="footer_menu--interes">
-            <h2>Sitios de interés</h2>           
-            <a href="https://www.snieg.mx/">SNIEG</a>
-            <a href="https://www.inegi.org.mx/">INEGI</a>            
-            <a href="https://www.snieg.mx/RNIEG/">RNIEG</a>
-            <a href="https://www.ceieg.chiapas.gob.mx/home/">CEIEG CHIAPAS</a>   
-        
-        </div>
+    <!-- Pie de pagina from Chiapas.html -->
+    <footer id="contacto">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="../../img/logoinegibco.png" alt="Logo Inegi" class="footer-logo">
+                <p>Dirección Regional Sur - Chiapas</p>
+            </div>
 
-        <label class="depa">Coordinación Estatal Chiapas </label>
-        <p class="copy">© Departamento de Comité Estatal</p>
+            <div class="footer-info">
+                <div class="footer-column">
+                    <h4>Departamento de Comité Estatal</h4>
+                    <p>Jefe de Departamento:</p>
+                    <p>María Luisa Mora Vicencio</p>
+                    <p style="margin-top: 10px;">Tel: 961 618 7260, Ext: 6618</p>
+                    <p><a href="luisa.mora@inegi.org.mx"
+                            style="color: #9ca3af; text-decoration: none;">luisa.mora@inegi.org.mx</a></p>
+                </div>
 
+                <div class="footer-column">
+                    <h4>Ubicación</h4>
+                    <p>Coordinación Estatal Chiapas</p>
+                    <p>Libramiento Norte Poniente 3850</p>
+                    <p>Plan de Ayala, Planta Baja</p>
+                    <p>Tuxtla Gutiérrez, Chiapas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dirección de Promoción y Concertación DRS | Derechos Reservados.</p>
+        </div>
     </footer>
 
     <!-- SCRIPTS -->
-    <!-- jquery -->
     <script src="../../assets/js/jquery.js"></script>
-    <!-- PDF Viewer -->
     <script>
         var previsual = null;
-        var pdfViewer = null; 
+        var pdfViewer = null;
         var pdfUrlGlobal = null;
         var x = document.getElementById("descargar");
-        x.style.display = "none";
-        /* if (x.style.display === "none") { */
-        
-    /*  } else {
-        x.style.display = "none";
-    } */
-        document.addEventListener("DOMContentLoaded", function() {
-            previsual = document.getElementById('previsual__imagen'); 
-            pdfViewer = document.getElementById("pdfview"); 
+
+        document.addEventListener("DOMContentLoaded", function () {
+            previsual = document.getElementById('previsual__imagen');
+            pdfViewer = document.getElementById("pdfview");
         });
 
-        function descargar(){
-        
-            if(pdfUrlGlobal === null){
-            alert('No encontre archivos')
-
-            }else{
-            window.open(pdfUrlGlobal, '_blank');
+        function descargar() {
+            if (pdfUrlGlobal === null) {
+                alert('No encontre archivos')
+            } else {
+                window.open(pdfUrlGlobal, '_blank');
             }
-
-            x.style.display = "none";
         }
 
-        function obtenerUrl(url){
-        pdfUrlGlobal = url
-        
+        function obtenerUrl(url) {
+            pdfUrlGlobal = url;
         }
 
-        function showPDF(pdfURL,url2) { 
+        function showPDF(pdfURL, url2) {
             previsual.style.display = 'none';
             setTimeout(() => {
                 pdfViewer.style.display = 'block';
-                
-            },100);
+            }, 100);
             document.getElementById('tmp').setAttribute("data", pdfURL);
             console.log(url2);
             obtenerUrl(url2);
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } 
+            x.style.display = "inline-flex";
         }
     </script>
     <!-- Menu collapsible -->
@@ -418,9 +577,6 @@
         itemMenu(config);
     </script>
     
-    <!-- STYLES -->
-    <link rel="stylesheet" href="../../assets/styles/estilo_act.css">
-    <link rel="stylesheet" href="../../assets/styles/collapsible.css">
     <script src="../../assets/js/authentication.js"></script>
 </body>
 </html>
