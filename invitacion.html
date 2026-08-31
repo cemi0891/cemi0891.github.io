@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Fiesta Reggae!</title>
+    <style>
+        body {
+            /* Fondo con colores Rasta y patrón de emojis */
+            background: linear-gradient(135deg, rgba(16, 150, 24, 0.9), rgba(245, 209, 0, 0.9), rgba(220, 57, 18, 0.9)), 
+                        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Ctext x='15' y='35' font-size='25'%3E🌴%3C/text%3E%3Ctext x='75' y='85' font-size='25'%3E🦁%3C/text%3E%3Ctext x='10' y='100' font-size='25'%3E🍁%3C/text%3E%3Ctext x='80' y='30' font-size='25'%3E🌿%3C/text%3E%3C/svg%3E");
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* PANTALLA DE INICIO (El truco para que suene la música) */
+        #pantalla-inicio {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        #pantalla-inicio h2 {
+            color: #f5d100;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        .btn-abrir {
+            background-color: #109618;
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.5em;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+            animation: latir 1.5s infinite;
+        }
+        /* Animación para que el botón pulse */
+        @keyframes latir {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* INVITACIÓN PRINCIPAL OCULTA AL INICIO */
+        #invitacion {
+            display: none;
+            background: rgba(0, 0, 0, 0.75);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 400px;
+            margin: 10px auto;
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+            animation: aparecer 1s ease-in;
+        }
+        @keyframes aparecer {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 { color: #f5d100; font-size: 2.5em; margin-bottom: 10px;}
+        p { font-size: 1.2em; line-height: 1.5;}
+        .details { margin: 20px 0; font-weight: bold; font-size: 1.1em;}
+        
+        .btn {
+            display: block;
+            background-color: #f5d100;
+            color: #000;
+            padding: 15px;
+            margin: 15px 0;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: 0.3s;
+        }
+        .btn:hover { background-color: #109618; color: white; }
+    </style>
+</head>
+<body>
+
+    <!-- PORTADA: El usuario debe hacer clic aquí para entrar -->
+    <div id="pantalla-inicio">
+        <h2>Tienes una invitación 🇯🇲</h2>
+        <button class="btn-abrir" onclick="abrirInvitacion()">✉️ Abrir Invitación</button>
+    </div>
+
+    <!-- INVITACIÓN REAL -->
+    <div id="invitacion">
+        <h1>¡ONE LOVE,<br>ONE PARTY! 🇯🇲</h1>
+        <p>Prepárate para una tarde de Good Vibes. Te invito a mi fiesta</p>
+        
+        <div class="details">
+            <p>📅 Este Jueves</p>
+            <p>🕒 A partir de las 2:30 p.m.</p>
+            <p>🦁 Buena vibra, hambre y sed.</p>
+        </div>
+
+        <a href="https://maps.app.goo.gl/2ZkF3uXbq7R9o7qFA" class="btn" target="_blank">📍 ¿Cómo llegar?</a>
+        
+        <!-- BOTÓN DE WHATSAPP YA CONFIGURADO CON TU NÚMERO -->
+        <a href="https://wa.me/5219512431497?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20la%20fiesta%20%F0%9F%A6%81%E2%9C%8C%EF%B8%8F" class="btn" target="_blank">✅ Confirmar Asistencia</a>
+    </div>
+
+    <!-- CONTENEDOR OCULTO: Aquí se reproduce la música sin que se vea -->
+    <div id="reproductor-oculto" style="display: none;"></div>
+
+    <!-- SCRIPT QUE HACE LA MAGIA -->
+    <script>
+        function abrirInvitacion() {
+            // 1. Ocultar la portada negra
+            document.getElementById("pantalla-inicio").style.display = "none";
+            // 2. Mostrar la invitación con efecto visual
+            document.getElementById("invitacion").style.display = "block";
+            
+            // 3. Insertar la canción de Bob Marley oculta y darle Autoplay
+            var iframeCode = '<iframe width="1" height="1" src="https://www.youtube.com/embed/eU28qL_6hQo?autoplay=1" frameborder="0" allow="autoplay"></iframe>';
+            document.getElementById("reproductor-oculto").innerHTML = iframeCode;
+        }
+    </script>
+</body>
+</html>
