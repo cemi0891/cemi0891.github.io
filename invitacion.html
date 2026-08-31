@@ -118,6 +118,8 @@
 
     <!-- SCRIPT QUE HACE LA MAGIA -->
     <script>
+        let audio;
+
         function abrirInvitacion() {
             // 1. Ocultar la portada negra
             document.getElementById("pantalla-inicio").style.display = "none";
@@ -125,9 +127,22 @@
             document.getElementById("invitacion").style.display = "block";
             
             // 3. Reproducir la canción local de Bob Marley
-            var audioCode = '<audio autoplay loop><source src="musica/one love-bob.mp3" type="audio/mpeg"></audio>';
+            var audioCode = '<audio id="mi-audio" autoplay loop><source src="musica/one love-bob.mp3" type="audio/mpeg"></audio>';
             document.getElementById("reproductor-oculto").innerHTML = audioCode;
+            
+            audio = document.getElementById("mi-audio");
         }
+
+        // Controlar la reproducción según la visibilidad de la página
+        document.addEventListener("visibilitychange", function() {
+            if (audio) {
+                if (document.hidden) {
+                    audio.pause();
+                } else {
+                    audio.play();
+                }
+            }
+        });
     </script>
 </body>
 </html>
