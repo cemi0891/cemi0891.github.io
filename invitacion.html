@@ -124,9 +124,9 @@
             // 2. Mostrar la invitación con efecto visual
             document.getElementById("invitacion").style.display = "block";
             
-            // 3. Insertar la canción de Bob Marley oculta y darle Autoplay
-            var iframeCode = '<iframe width="1" height="1" src="https://www.youtube.com/embed/eU28qL_6hQo?autoplay=1" frameborder="0" allow="autoplay"></iframe>';
-            document.getElementById("reproductor-oculto").innerHTML = iframeCode;
+            // 3. Reproducir la canción local de Bob Marley
+            var audioCode = '<audio autoplay loop><source src="musica/one love-bob.mp3" type="audio/mpeg"></audio>';
+            document.getElementById("reproductor-oculto").innerHTML = audioCode;
         }
     </script>
 </body>
